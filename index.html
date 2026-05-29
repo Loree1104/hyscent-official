@@ -3,12 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hyscent | Professional Niche Fragrance & Collectibles</title>
-    <meta name="description" content="Explore Hyscent's original niche fragrance collections including Oriental, Wild, and Leather series. Expertly crafted for longevity and elegance. Global shipping available.">
-    <meta name="keywords" content="niche perfume, original fragrance, oriental scents, luxury leather perfume, Arabian oud, custom fragrance, collectible cards, Pokemon cards, FIFA cards, Hyscent">
-    <meta property="og:title" content="Hyscent | Professional Niche Fragrance & Collectibles">
-    <meta property="og:description" content="Discover the art of original scent creation. High-quality perfumes and authentic collectibles.">
+    <title>Hyscent | The Art of Niche Fragrance & Original Collectibles</title>
+    <meta name="description" content="Hyscent (HCYScent) presents original niche fragrance collections. From Wild Field to Orient Zen, discover scents crafted for extreme longevity and restrained luxury. Global shipping available.">
+    <meta name="keywords" content="niche perfume, Hyscent, original fragrance, zen scents, luxury oud, custom tarot cards, premium collectibles, HCYScents">
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hcyscents.com/">
+    <meta property="og:title" content="Hyscent | The Art of Niche Fragrance">
+    <meta property="og:description" content="Discover original niche fragrances and premium collectibles. Crafted for the untamed and the elegant.">
+    <meta property="og:image" content="https://sc01.alicdn.com/kf/Ac3c752ec893f4de694b6ea0e36ff1ccdd.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hcyscents.com/">
+    <meta property="twitter:title" content="Hyscent | The Art of Niche Fragrance">
+    <meta property="twitter:description" content="Discover original niche fragrances and premium collectibles. Crafted for the untamed and the elegant.">
+    <meta property="twitter:image" content="https://sc01.alicdn.com/kf/Ac3c752ec893f4de694b6ea0e36ff1ccdd.jpg">
+
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://hcyscents.com/">
 
@@ -54,61 +66,66 @@
         :root {
             --gold: #D4AF37;
             --black: #0A0A0A;
-            --dark-grey: #1A1A1A;
-            --white: #FFFFFF;
-            --light-grey: #999;
+            --dark-grey: #121212;
+            --white: #F5F5F5;
+            --light-grey: #888;
+            --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
         }
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Playfair Display', serif; scroll-behavior: smooth; }
-        body { background-color: var(--black); color: var(--white); line-height: 1.6; }
-        header { padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(212, 175, 55, 0.2); position: sticky; top: 0; background: var(--black); z-index: 1000; }
-        .logo img { height: 50px; }
-        nav a { color: var(--white); text-decoration: none; margin-left: 30px; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; }
-        nav a:hover { color: var(--gold); }
-        .hero { height: 90vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://sc01.alicdn.com/kf/Ac3c752ec893f4de694b6ea0e36ff1ccdd.jpg') center/cover; padding: 0 10%; }
-        .hero h1 { font-size: 4rem; margin-bottom: 20px; color: var(--gold); letter-spacing: 10px; font-weight: 700; }
-        .hero p { font-size: 1.1rem; max-width: 800px; margin-bottom: 40px; color: #ddd; letter-spacing: 1px; }
-        .btn { padding: 15px 40px; border: 1px solid var(--gold); color: var(--gold); text-decoration: none; transition: 0.3s; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; display: inline-block; cursor: pointer; }
-        .btn:hover { background: var(--gold); color: var(--black); }
-        section { padding: 100px 5%; }
-        .section-title { text-align: center; font-size: 3rem; margin-bottom: 20px; color: var(--gold); text-transform: uppercase; letter-spacing: 5px; }
-        .section-subtitle { text-align: center; color: var(--light-grey); margin-bottom: 60px; font-style: italic; letter-spacing: 2px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; }
-        .card { background: var(--dark-grey); border: 1px solid #222; padding: 0; transition: 0.5s; overflow: hidden; display: flex; flex-direction: column; }
-        .card:hover { border-color: var(--gold); transform: translateY(-10px); }
-        .card-img-container { width: 100%; height: 400px; overflow: hidden; position: relative; }
-        .card img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
-        .card:hover img { transform: scale(1.1); }
-        .card-content { padding: 30px; flex-grow: 1; display: flex; flex-direction: column; }
-        .card h3 { color: var(--gold); margin-bottom: 10px; font-size: 1.5rem; letter-spacing: 1px; }
-        .card .slogan { color: var(--white); font-size: 0.9rem; font-weight: 600; margin-bottom: 15px; letter-spacing: 1px; text-transform: uppercase; border-bottom: 1px solid #333; padding-bottom: 10px; }
-        .card .desc { font-size: 0.95rem; color: #bbb; margin-bottom: 20px; line-height: 1.5; }
-        .card .price { margin-top: auto; font-size: 1.2rem; color: var(--gold); font-weight: 700; }
-        .brand-intro { background: #050505; border-top: 1px solid #111; border-bottom: 1px solid #111; }
-        .footer { padding: 80px 5%; text-align: center; background: #000; color: #555; font-size: 0.9rem; letter-spacing: 1px; }
-        .contact-info { margin-top: 30px; color: var(--gold); font-size: 1.2rem; letter-spacing: 1px; }
+        body { background-color: var(--black); color: var(--white); line-height: 1.8; -webkit-font-smoothing: antialiased; }
         
-        /* New Professional Sections */
-        .trust-badges { display: flex; justify-content: space-around; padding: 40px 5%; background: #111; border-top: 1px solid #222; border-bottom: 1px solid #222; flex-wrap: wrap; }
-        .badge-item { text-align: center; margin: 20px; min-width: 150px; }
-        .badge-item i { font-size: 2rem; color: var(--gold); margin-bottom: 10px; display: block; }
-        .badge-item span { font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase; color: var(--white); }
-
-        .blog-section { background: var(--black); }
-        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .blog-post { background: #050505; border: 1px solid #222; transition: 0.3s; }
-        .blog-post:hover { border-color: var(--gold); }
-        .blog-post img { width: 100%; height: 400px; object-fit: cover; }
-        .blog-post-content { padding: 20px; }
-
-        .newsletter { background: var(--gold); color: var(--black); padding: 80px 5%; text-align: center; }
-
-        .newsletter h2 { font-size: 2.5rem; margin-bottom: 20px; }
-        .newsletter p { margin-bottom: 30px; font-size: 1.1rem; }
-        .newsletter-form { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
-        .newsletter-form input { padding: 15px 25px; border: none; width: 300px; max-width: 100%; font-size: 1rem; }
-        .newsletter-form button { padding: 15px 40px; background: var(--black); color: var(--gold); border: none; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; font-weight: bold; }
+        /* Navigation Optimization */
+        header { padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(212, 175, 55, 0.1); position: sticky; top: 0; background: rgba(10, 10, 10, 0.95); backdrop-filter: blur(10px); z-index: 1000; }
+        .logo img { height: 45px; transition: var(--transition); }
+        .logo img:hover { transform: scale(1.05); }
         
-        @media (max-width: 768px) { .hero h1 { font-size: 2.5rem; } nav { display: none; } .section-title { font-size: 2rem; } }
+        nav a { color: var(--white); text-decoration: none; margin-left: 35px; font-size: 0.75rem; letter-spacing: 3px; text-transform: uppercase; transition: var(--transition); opacity: 0.8; }
+        nav a:hover { color: var(--gold); opacity: 1; }
+        
+        .mobile-menu-btn { display: none; color: var(--gold); font-size: 1.5rem; cursor: pointer; }
+
+        /* Hero Refinement */
+        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://sc01.alicdn.com/kf/Ac3c752ec893f4de694b6ea0e36ff1ccdd.jpg') center/cover; padding: 0 10%; }
+        .hero h1 { font-size: clamp(3rem, 10vw, 6rem); margin-bottom: 25px; color: var(--gold); letter-spacing: 15px; font-weight: 700; text-shadow: 0 5px 15px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.1rem; max-width: 700px; margin-bottom: 50px; color: #ccc; letter-spacing: 1.5px; font-style: italic; }
+        
+        .btn { padding: 18px 45px; border: 1px solid var(--gold); color: var(--gold); text-decoration: none; transition: var(--transition); text-transform: uppercase; letter-spacing: 3px; font-size: 0.85rem; display: inline-block; position: relative; overflow: hidden; }
+        .btn:hover { background: var(--gold); color: var(--black); box-shadow: 0 0 20px rgba(212, 175, 55, 0.3); }
+
+        /* Product Cards Enhancement */
+        section { padding: 120px 8%; }
+        .section-title { text-align: center; font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 15px; color: var(--gold); text-transform: uppercase; letter-spacing: 8px; }
+        .section-subtitle { text-align: center; color: var(--light-grey); margin-bottom: 80px; font-style: italic; letter-spacing: 3px; font-size: 1.1rem; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; }
+        .card { background: var(--dark-grey); border: 1px solid #1a1a1a; padding: 0; transition: var(--transition); overflow: hidden; display: flex; flex-direction: column; position: relative; }
+        .card:hover { border-color: var(--gold); transform: translateY(-15px); box-shadow: 0 20px 40px rgba(0,0,0,0.6); }
+        
+        .card-img-container { width: 100%; aspect-ratio: 3/4; overflow: hidden; position: relative; }
+        .card img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1); }
+        .card:hover img { transform: scale(1.08); }
+        
+        .card-content { padding: 35px; flex-grow: 1; display: flex; flex-direction: column; text-align: center; }
+        .card h3 { color: var(--gold); margin-bottom: 12px; font-size: 1.6rem; letter-spacing: 2px; }
+        .card .slogan { color: #888; font-size: 0.8rem; font-weight: 400; margin-bottom: 18px; letter-spacing: 2px; text-transform: uppercase; }
+        .card .desc { font-size: 0.95rem; color: #aaa; margin-bottom: 25px; line-height: 1.7; }
+        .card .price { margin-top: auto; font-size: 1.3rem; color: var(--white); font-weight: 400; border-top: 1px solid #222; padding-top: 20px; }
+        
+        .order-now { margin-top: 20px; color: var(--gold); text-decoration: none; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; border-bottom: 1px solid var(--gold); display: inline-block; transition: 0.3s; padding-bottom: 2px; }
+        .order-now:hover { opacity: 0.7; letter-spacing: 3px; }
+
+        /* Scroll Reveal Animation */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        @media (max-width: 1024px) { section { padding: 80px 5%; } .grid { gap: 30px; } }
+        @media (max-width: 768px) { 
+            .hero h1 { font-size: 2.8rem; letter-spacing: 8px; } 
+            nav { display: none; } 
+            .mobile-menu-btn { display: block; }
+            .section-title { font-size: 2.2rem; letter-spacing: 4px; }
+            .section-subtitle { margin-bottom: 50px; }
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -125,16 +142,28 @@
         <a href="#custom-gifts">Custom Gifts</a>
         <a href="#contact">Our Story</a>
         <a href="#contact">Contact</a>
-    </nav>
+    <div class="mobile-menu-btn" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
 </header>
 
-<section class="hero">
+<div id="mobile-nav" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--black); z-index: 2000; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+    <div style="position: absolute; top: 20px; right: 5%; color: var(--gold); font-size: 2rem; cursor: pointer;" onclick="toggleMenu()">
+        <i class="fas fa-times"></i>
+    </div>
+    <a href="#wild" onclick="toggleMenu()" style="color: var(--white); font-size: 1.5rem; text-decoration: none; margin: 20px; letter-spacing: 5px; text-transform: uppercase;">Collections</a>
+    <a href="#journal" onclick="toggleMenu()" style="color: var(--white); font-size: 1.5rem; text-decoration: none; margin: 20px; letter-spacing: 5px; text-transform: uppercase;">Scent Journal</a>
+    <a href="#custom-gifts" onclick="toggleMenu()" style="color: var(--white); font-size: 1.5rem; text-decoration: none; margin: 20px; letter-spacing: 5px; text-transform: uppercase;">Custom Gifts</a>
+    <a href="#contact" onclick="toggleMenu()" style="color: var(--white); font-size: 1.5rem; text-decoration: none; margin: 20px; letter-spacing: 5px; text-transform: uppercase;">Our Story</a>
+</div>
+
+<section class="hero reveal">
     <h1>HYSCENT</h1>
-    <p>Hyscent (HCYScent) is an original niche fragrance brand focusing on Oriental, Wild, Luxury Leather and Arabian scent series. We pursue high simulation of natural fragrance, extreme longevity, and independent creation. Popular in Europe, America, the Middle East, and Southeast Asia.</p>
-    <a href="#wild" class="btn">Discover the Scents</a>
+    <p>A journey through untamed wilderness, golden deserts, and tranquil orient gardens. Original niche fragrances for those who seek the extraordinary.</p>
+    <a href="#wild" class="btn">Experience the Scent</a>
 </section>
 
-<div class="trust-badges">
+<div class="trust-badges reveal">
     <div class="badge-item">
         <i class="fas fa-globe"></i>
         <span>Global Shipping</span>
@@ -154,7 +183,7 @@
 </div>
 
 <!-- Section: WILD FIELD -->
-<section id="wild">
+<section id="wild" class="reveal">
     <h2 class="section-title">Wild Field Collection</h2>
     <p class="section-subtitle">The Spirit of the Untamed Wilderness</p>
     <div class="grid">
@@ -165,6 +194,7 @@
                 <p class="slogan">Fresh & Wild, All Day Comfort</p>
                 <p class="desc">Fresh citrus cedar scent, clean and transparent, all-day wearable neutral cologne with outdoor wild fragrance.</p>
                 <div class="price">USD 15.99</div>
+                <a href="https://wa.me/8618774306344?text=Hello, I am interested in Wild Breeze perfume." class="order-now" target="_blank">Order Now</a>
             </div>
         </div>
         <div class="card">
@@ -174,6 +204,7 @@
                 <p class="slogan">Deep Woody, Gentle Masculinity</p>
                 <p class="desc">A deep mature woody amber fragrance with smoky tones and strong lasting power. A signature scent for business.</p>
                 <div class="price">USD 15.99</div>
+                <a href="https://wa.me/8618774306344?text=Hello, I am interested in Wild Amber perfume." class="order-now" target="_blank">Order Now</a>
             </div>
         </div>
         <div class="card">
@@ -183,13 +214,14 @@
                 <p class="slogan">Mysterious Cold Scent, Niche Style</p>
                 <p class="desc">Cold wild forest scent with green herbal tones. Mysterious, quiet, and advanced unisex niche perfume.</p>
                 <div class="price">USD 15.99</div>
+                <a href="https://wa.me/8618774306344?text=Hello, I am interested in Wild Night perfume." class="order-now" target="_blank">Order Now</a>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Section: NOBLE LEATHER -->
-<section id="noble" style="background-color: #050505;">
+<section id="noble" style="background-color: #050505;" class="reveal">
     <h2 class="section-title">Noble Leather Collection</h2>
     <p class="section-subtitle">The Art of Restrained Luxury</p>
     <div class="grid">
@@ -200,6 +232,7 @@
                 <p class="slogan">Soft Leather, Restrained Luxury</p>
                 <p class="desc">Soft milky leather fragrance with fruity wood tones. High-end luxury daily perfume for gifting and business.</p>
                 <div class="price">USD 19.99</div>
+                <a href="https://wa.me/8618774306344?text=Hello, I am interested in Noble Cuir perfume." class="order-now" target="_blank">Order Now</a>
             </div>
         </div>
         <div class="card">
@@ -209,6 +242,7 @@
                 <p class="slogan">Retro Charm, Timeless Elegance</p>
                 <p class="desc">Retro smoky leather mixed with rum and amber. Classic vintage luxury fragrance with strong layering.</p>
                 <div class="price">USD 19.99</div>
+                <a href="https://wa.me/8618774306344?text=Hello, I am interested in Vintage Veil perfume." class="order-now" target="_blank">Order Now</a>
             </div>
         </div>
         <div class="card">
@@ -218,13 +252,14 @@
                 <p class="slogan">Warm Milk Wood, Skin-friendly Scent</p>
                 <p class="desc">Soft milk wood and fabric scent. Warm and healing, skin-like intimate daily niche perfume.</p>
                 <div class="price">USD 19.99</div>
+                <a href="https://wa.me/8618774306344?text=Hello, I am interested in Cream Wood perfume." class="order-now" target="_blank">Order Now</a>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Section: ARAB GLOW -->
-<section id="arab">
+<section id="arab" class="reveal">
     <h2 class="section-title">Arab Glow Collection</h2>
     <p class="section-subtitle">Oriental Opulence & Golden Sunsets</p>
     <div class="grid">
@@ -235,6 +270,7 @@
                 <p class="slogan">Royal Oud, Supreme Long Lasting</p>
                 <p class="desc">Premium saffron rose oud scent. Noble oriental luxury, super long-lasting Dubai style perfume.</p>
                 <div class="price">USD 19.99</div>
+                <a href="https://wa.me/8618774306344?text=Hello, I am interested in Saffron Oud perfume." class="order-now" target="_blank">Order Now</a>
             </div>
         </div>
         <div class="card">
@@ -244,6 +280,7 @@
                 <p class="slogan">Warm Desert Aroma, Sweet & Mellow</p>
                 <p class="desc">Warm sweet desert milk scent with date and frankincense. Soft, rich, and extremely durable.</p>
                 <div class="price">USD 19.99</div>
+                <a href="https://wa.me/8618774306344?text=Hello, I am interested in Desert Milk perfume." class="order-now" target="_blank">Order Now</a>
             </div>
         </div>
         <div class="card">
@@ -253,13 +290,14 @@
                 <p class="slogan">Noble Amber, Classic Arabian Scent</p>
                 <p class="desc">Noble royal amber with spicy floral wood tones. Strong layered and extremely recognizable.</p>
                 <div class="price">USD 19.99</div>
+                <a href="https://wa.me/8618774306344?text=Hello, I am interested in Royal Amber perfume." class="order-now" target="_blank">Order Now</a>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Section: ORIENT ZEN -->
-<section id="zen" style="background-color: #050505;">
+<section id="zen" style="background-color: #050505;" class="reveal">
     <h2 class="section-title">Orient Zen Collection</h2>
     <p class="section-subtitle">Minimalist Oriental Aesthetics</p>
     <div class="grid">
@@ -270,6 +308,7 @@
                 <p class="slogan">Pure Bamboo Scent, Peaceful Mood</p>
                 <p class="desc">Fresh bamboo and white tea scent. Clean and healing oriental zen fragrance for daily relaxing wear.</p>
                 <div class="price">USD 15.99</div>
+                <a href="https://wa.me/8618774306344?text=Hello, I am interested in Zen Bamboo perfume." class="order-now" target="_blank">Order Now</a>
             </div>
         </div>
         <div class="card">
@@ -279,6 +318,7 @@
                 <p class="slogan">Tea & Ink, Literati Oriental Scent</p>
                 <p class="desc">Original ink and old tea wood scent. Niche literary oriental fragrance with high differentiation.</p>
                 <div class="price">USD 15.99</div>
+                <a href="https://wa.me/8618774306344?text=Hello, I am interested in Misty Ink perfume." class="order-now" target="_blank">Order Now</a>
             </div>
         </div>
         <div class="card">
@@ -288,13 +328,14 @@
                 <p class="slogan">Soft Floral, Oriental Romance</p>
                 <p class="desc">Soft pear blossom and crabapple floral scent. Warm, sweet oriental romance, elegant and quiet.</p>
                 <div class="price">USD 15.99</div>
+                <a href="https://wa.me/8618774306344?text=Hello, I am interested in Spring Blossom perfume." class="order-now" target="_blank">Order Now</a>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Section: CUSTOM GIFTS & COLLECTIBLES -->
-<section id="custom-gifts">
+<section id="custom-gifts" class="reveal">
     <h2 class="section-title">Custom Gifts & Collectibles</h2>
     <p class="section-subtitle">Personalized Tarot Cards & Bespoke Perfume Sets</p>
     <div class="grid">
@@ -305,6 +346,7 @@
                 <p class="slogan">Your Destiny, Your Design</p>
                 <p class="desc">High-quality custom printed Tarot decks. Personalized artwork and premium cardstock for professional readers and collectors.</p>
                 <div class="price">Wholesale Available</div>
+                <a href="https://wa.me/8618774306344?text=Hello, I am interested in custom tarot cards." class="order-now" target="_blank">Inquire Now</a>
             </div>
         </div>
         <div class="card">
@@ -314,13 +356,14 @@
                 <p class="slogan">Luxury Gift Experience</p>
                 <p class="desc">Customized fragrance gift boxes. Perfect for weddings, corporate events, or premium brand presentations.</p>
                 <div class="price">Starting at $49.99</div>
+                <a href="https://wa.me/8618774306344?text=Hello, I am interested in bespoke perfume sets." class="order-now" target="_blank">Inquire Now</a>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Section: SCENT JOURNAL (BLOG) -->
-<section id="journal" class="blog-section">
+<section id="journal" class="blog-section reveal">
     <h2 class="section-title">Scent Journal</h2>
     <p class="section-subtitle">Deep Dives into the Art of Fragrance</p>
     <div class="blog-grid">
@@ -330,7 +373,7 @@
                 <span class="blog-date">May 25, 2026</span>
                 <h4>The Art of Scent Extraction</h4>
                 <p>Discover how we capture the purest essence of nature through our advanced cold-press and steam distillation techniques.</p>
-                <a href="#" class="read-more">Read Entry</a>
+                <a href="blog/extraction.html" class="read-more">Read Entry</a>
             </div>
         </article>
         <article class="blog-post">
@@ -339,7 +382,7 @@
                 <span class="blog-date">May 10, 2026</span>
                 <h4>Rare Spices: The Heart of Arab Glow</h4>
                 <p>Explore the golden deserts to find the finest Saffron and Oud, the precious ingredients that define our oriental collection.</p>
-                <a href="#" class="read-more">Read Entry</a>
+                <a href="blog/arab-glow.html" class="read-more">Read Entry</a>
             </div>
         </article>
         <article class="blog-post">
@@ -348,14 +391,33 @@
                 <span class="blog-date">April 28, 2026</span>
                 <h4>The Unboxing Experience</h4>
                 <p>Every bottle tells a story, and every box is a work of art. Learn about our sustainable yet luxurious packaging philosophy.</p>
-                <a href="#" class="read-more">Read Entry</a>
+                <a href="blog/unboxing.html" class="read-more">Read Entry</a>
+            </div>
+        </article>
+
+        <article class="blog-post">
+            <img src="https://sc01.alicdn.com/kf/A60f8c15f51454787817abbf1c98704c93.jpg" alt="Spice Sourcing">
+            <div class="blog-post-content">
+                <span class="blog-date">May 10, 2026</span>
+                <h4>Rare Spices: The Heart of Arab Glow</h4>
+                <p>Explore the golden deserts to find the finest Saffron and Oud, the precious ingredients that define our oriental collection.</p>
+                <a href="#" class="order-now">Read Entry</a>
+            </div>
+        </article>
+        <article class="blog-post">
+            <img src="https://sc01.alicdn.com/kf/Aceed42e2d0c6495a90fecfd6fba5f012Z.jpg" alt="Bespoke Packaging">
+            <div class="blog-post-content">
+                <span class="blog-date">April 28, 2026</span>
+                <h4>The Unboxing Experience</h4>
+                <p>Every bottle tells a story, and every box is a work of art. Learn about our sustainable yet luxurious packaging philosophy.</p>
+                <a href="#" class="order-now">Read Entry</a>
             </div>
         </article>
     </div>
 </section>
 
 <!-- Section: NEWSLETTER -->
-<section class="newsletter">
+<section class="newsletter reveal">
     <h2>Join the Inner Circle</h2>
     <p>Subscribe for exclusive launches, scent stories, and early access to our limited collectibles.</p>
     <form class="newsletter-form">
@@ -365,7 +427,7 @@
 </section>
 
 <!-- Section: CONTACT / ABOUT -->
-<section id="contact" style="background-color: #050505;">
+<section id="contact" style="background-color: #050505;" class="reveal">
     <h2 class="section-title">Our Story</h2>
     <div style="text-align: center; max-width: 900px; margin: 0 auto; margin-bottom: 80px;">
         <p style="color: #ccc; font-size: 1.2rem; line-height: 1.8; margin-bottom: 30px;">
@@ -389,7 +451,7 @@
     </div>
 
     <!-- Intellectual Property Policy -->
-    <div style="margin-top: 100px; padding: 40px; background: #000; border: 1px solid #222; text-align: left; max-width: 900px; margin-left: auto; margin-right: auto;">
+    <div style="margin-top: 100px; padding: 40px; background: #000; border: 1px solid #222; text-align: left; max-width: 900px; margin-left: auto; margin-right: auto;" class="reveal">
         <h3 style="color: var(--gold); margin-bottom: 20px; font-size: 1.2rem; text-transform: uppercase;">Intellectual Property Policy</h3>
         <p style="font-size: 0.85rem; color: #888; line-height: 1.6; margin-bottom: 20px;">
             Effective Date: May 26, 2026. Hyscent respects intellectual property rights. We create original scents and custom designs with no affiliation to any third-party luxury, gaming, or sports brands. Our descriptions are based strictly on ingredients and independent creation.
@@ -407,6 +469,32 @@
     <p>&copy; 2026 Hyscent Fragrance. All Rights Reserved.</p>
     <p style="margin-top: 10px; font-size: 0.7rem; color: #333;">Crafted for Excellence.</p>
 </div>
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('mobile-nav');
+        if (menu.style.display === 'flex') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'flex';
+        }
+    }
+
+    function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+            }
+        }
+    }
+
+    window.addEventListener("scroll", reveal);
+    window.addEventListener("load", reveal);
+</script>
 
 </body>
 </html>
