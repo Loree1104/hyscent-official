@@ -7,294 +7,275 @@
     <style>
         :root { --gold: #D4AF37; --black: #0A0A0A; --white: #F5F5F5; --gray: #888; }
         body { background: var(--black); color: var(--white); font-family: 'Times New Roman', serif; margin: 0; }
-        header { padding: 40px 5%; text-align: center; border-bottom: 1px solid #222; }
-        .logo { font-size: 2rem; letter-spacing: 8px; color: var(--gold); text-decoration: none; }
-        .hero { padding: 120px 5%; text-align: center; background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://sc02.alicdn.com/kf/A19f318d017ab4cdfb046d691874ba9e5G.png'); background-size: cover; background-position: center; border-bottom: 1px solid var(--gold); }
-        .hero h1 { font-size: 3.5rem; color: var(--gold); margin-bottom: 10px; font-weight: 300; letter-spacing: 5px; }
-        .hero p { max-width: 800px; margin: 0 auto; color: var(--gray); font-style: italic; font-size: 1.2rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; padding: 80px 5%; }
-        .card { background: #111; border: 1px solid #222; overflow: hidden; transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); }
-        .card:hover { border-color: var(--gold); transform: translateY(-10px); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-        .card-content { padding: 30px; }
-        .card-no { font-size: 0.8rem; color: var(--gold); letter-spacing: 3px; font-weight: bold; }
-        .card-title { font-size: 1.5rem; margin: 15px 0; color: var(--white); font-weight: 400; line-height: 1.2; text-transform: uppercase; }
-        .card-notes { font-size: 0.85rem; color: var(--gray); margin-bottom: 25px; min-height: 80px; line-height: 1.8; border-top: 1px solid #222; padding-top: 15px; }
-        .card-notes strong { color: var(--gold); display: block; margin-top: 5px; }
-        .card-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #222; padding-top: 25px; }
-        .price { color: var(--gold); font-size: 1.3rem; font-weight: bold; }
-        .size { color: var(--gray); font-size: 0.9rem; }
-        .buy-btn { text-decoration: none; color: var(--white); border: 1px solid var(--gold); padding: 10px 20px; font-size: 0.85rem; letter-spacing: 1px; transition: 0.3s; }
-        .buy-btn:hover { background: var(--gold); color: var(--black); }
-        .footer { text-align: center; padding: 80px 5%; border-top: 1px solid #222; color: var(--gray); letter-spacing: 2px; }
-        .whatsapp-btn { position: fixed; bottom: 30px; right: 30px; background: var(--gold); color: var(--black); padding: 18px 30px; border-radius: 5px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 20px rgba(0,0,0,0.4); letter-spacing: 1px; transition: 0.3s; }
-        .whatsapp-btn:hover { transform: scale(1.05); }
+        header { padding: 20px 5%; text-align: center; border-bottom: 1px solid #222; }
+        .logo { font-size: 1.5rem; letter-spacing: 5px; color: var(--gold); text-decoration: none; text-transform: uppercase; }
+        .hero { padding: 100px 5%; text-align: center; background: #000; border-bottom: 1px solid var(--gold); }
+        .hero h1 { font-size: 3rem; color: var(--gold); margin-bottom: 10px; font-weight: 300; letter-spacing: 5px; }
+        .hero p { max-width: 800px; margin: 0 auto; color: var(--gray); font-style: italic; font-size: 1.1rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 60px 5%; }
+        .card { background: #111; border: 1px solid #222; overflow: hidden; transition: 0.4s; }
+        .card:hover { border-color: var(--gold); transform: translateY(-5px); }
+        .card-img { width: 100%; aspect-ratio: 1; overflow: hidden; }
+        .card-img img { width: 100%; height: 100%; object-fit: cover; }
+        .card-content { padding: 20px; }
+        .card-no { font-size: 0.7rem; color: var(--gold); letter-spacing: 2px; font-weight: bold; }
+        .card-title { font-size: 1.2rem; margin: 10px 0; color: var(--white); text-transform: uppercase; }
+        .card-notes { font-size: 0.8rem; color: var(--gray); min-height: 100px; border-top: 1px solid #222; padding-top: 10px; line-height: 1.6; }
+        .card-notes strong { color: var(--gold); }
+        .btn { display: block; text-align: center; padding: 10px; border: 1px solid var(--gold); color: var(--gold); text-decoration: none; margin-top: 20px; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; }
+        .btn:hover { background: var(--gold); color: #000; }
+        footer { text-align: center; padding: 40px; border-top: 1px solid #222; color: #444; font-size: 0.8rem; }
     </style>
 </head>
 <body>
-<header><a href="index.html" class="logo">HYSCENT</a></header>
-<section class="hero">
-    <h1>L'Empereur Series</h1>
-    <p>Inspired by the world's most prestigious royal fragrance houses. These 1:1 masterpieces capture the essence of power, history, and unrivaled status.</p>
-</section>
-<div class="grid">
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 2</span>
-            <h3 class="card-title"> Heritage Blend</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
+    <header><a href="index.html" class="logo">Hyscent</a></header>
+    <div class="hero">
+        <h1>L'Empereur Series</h1>
+        <p>The Legends of Perfumery. 1:1 master formulations of global icons.</p>
+    </div>
+    <div class="grid">
+
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="ML"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 2</div>
+                <div class="card-title">ML</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 2 - ML" class="btn">Inquire Now</a>
             </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/A9ee1298c593f4fb1a82f27a6086dc583p.png" alt="THE WATER OF SUCCESS"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 3</div>
+                <div class="card-title">THE WATER OF SUCCESS</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 3 - THE WATER OF SUCCESS" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Ac4e485bb0e4d47ef9eb1cff583bc9df4g.png" alt="SUCCESSOR'S LEGEND"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 4</div>
+                <div class="card-title">SUCCESSOR'S LEGEND</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 4 - SUCCESSOR'S LEGEND" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="N5"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 5</div>
+                <div class="card-title">N5</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 5 - N5" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Ac4e485bb0e4d47ef9eb1cff583bc9df4g.png" alt="GLACIER PEAK"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 6</div>
+                <div class="card-title">GLACIER PEAK</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 6 - GLACIER PEAK" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="MILLESIME"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 7</div>
+                <div class="card-title">MILLESIME</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 7 - MILLESIME" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Ac4e485bb0e4d47ef9eb1cff583bc9df4g.png" alt="SUCCESSOR'S LEGEND"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 4</div>
+                <div class="card-title">SUCCESSOR'S LEGEND</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 4 - SUCCESSOR'S LEGEND" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Ac4e485bb0e4d47ef9eb1cff583bc9df4g.png" alt="SUCCESSOR'S LEGEND"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 9</div>
+                <div class="card-title">SUCCESSOR'S LEGEND</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 9 - SUCCESSOR'S LEGEND" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="THE 10TH"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 10</div>
+                <div class="card-title">THE 10TH</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 10 - THE 10TH" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="THE FLOWER OF THE WIND"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 11</div>
+                <div class="card-title">THE FLOWER OF THE WIND</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 11 - THE FLOWER OF THE WIND" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="SPRING FLOWER"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 12</div>
+                <div class="card-title">SPRING FLOWER</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 12 - SPRING FLOWER" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="N5"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 5</div>
+                <div class="card-title">N5</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 5 - N5" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="FRAGARIA"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 14</div>
+                <div class="card-title">FRAGARIA</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 14 - FRAGARIA" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/A8f6898b70d984b8db680d881a8563cea7.png" alt="LOVE IN BLACK"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 15</div>
+                <div class="card-title">LOVE IN BLACK</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 15 - LOVE IN BLACK" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="ACQUA FIORENTINA"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 16</div>
+                <div class="card-title">ACQUA FIORENTINA</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 16 - ACQUA FIORENTINA" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="FLEU RISSIMO"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 17</div>
+                <div class="card-title">FLEU RISSIMO</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 17 - FLEU RISSIMO" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="THE FLOWER OF THE WIND"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 11</div>
+                <div class="card-title">THE FLOWER OF THE WIND</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 11 - THE FLOWER OF THE WIND" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Ac4e485bb0e4d47ef9eb1cff583bc9df4g.png" alt="HOMME SPORT"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 43</div>
+                <div class="card-title">HOMME SPORT</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 43 - HOMME SPORT" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="HYPNOTIC ()"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 44</div>
+                <div class="card-title">HYPNOTIC ()</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 44 - HYPNOTIC ()" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="PURE"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 45</div>
+                <div class="card-title">PURE</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 45 - PURE" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="SPRING FLOWER"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 12</div>
+                <div class="card-title">SPRING FLOWER</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 12 - SPRING FLOWER" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="XER JOFF GOLD"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 47</div>
+                <div class="card-title">XER JOFF GOLD</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 47 - XER JOFF GOLD" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="BLOOM"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 48</div>
+                <div class="card-title">BLOOM</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 48 - BLOOM" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="XER JOFF CRUZ DEL SUR LL"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 49</div>
+                <div class="card-title">XER JOFF CRUZ DEL SUR LL</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 49 - XER JOFF CRUZ DEL SUR LL" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="WARDASINA"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 50</div>
+                <div class="card-title">WARDASINA</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 50 - WARDASINA" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="THE 13TH"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 13</div>
+                <div class="card-title">THE 13TH</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 13 - THE 13TH" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="CORO"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 52</div>
+                <div class="card-title">CORO</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 52 - CORO" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="OPERA"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 53</div>
+                <div class="card-title">OPERA</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 53 - OPERA" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="MORE THAN WORDS"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 54</div>
+                <div class="card-title">MORE THAN WORDS</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 54 - MORE THAN WORDS" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="THE 55TH"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 55</div>
+                <div class="card-title">THE 55TH</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 55 - THE 55TH" class="btn">Inquire Now</a>
             </div>
         </div>
     </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 3</span>
-            <h3 class="card-title">The Water Of Success</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Bergamot, Lemon
-                <strong>Middle Notes:</strong> Green Tea, Jasmine
-                <strong>Base Notes:</strong> White Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$19.99</span>
-                <span class="size">75ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 4</span>
-            <h3 class="card-title">Successor's Legend</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Pineapple, Apple, Bergamot
-                <strong>Middle Notes:</strong> Birch, Patchouli, Jasmine
-                <strong>Base Notes:</strong> Musk, Oakmoss, Ambergris
-            </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 5</span>
-            <h3 class="card-title"> Heritage Blend</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">75ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 6</span>
-            <h3 class="card-title">Glacier Peak</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Grapefruit, Lemon
-                <strong>Middle Notes:</strong> Gunpowder, Juniper
-                <strong>Base Notes:</strong> Sandalwood, Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 7</span>
-            <h3 class="card-title">Millesime</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Bergamot, Lemon, Pepper
-                <strong>Middle Notes:</strong> Jasmine, Rose, Patchouli
-                <strong>Base Notes:</strong> Musk, Amber, Sandalwood
-            </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 4</span>
-            <h3 class="card-title">Successor's Legend</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Pineapple, Apple, Bergamot
-                <strong>Middle Notes:</strong> Birch, Patchouli, Jasmine
-                <strong>Base Notes:</strong> Musk, Oakmoss, Ambergris
-            </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 9</span>
-            <h3 class="card-title">Successor's Legend</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Pineapple, Apple, Bergamot
-                <strong>Middle Notes:</strong> Birch, Patchouli, Jasmine
-                <strong>Base Notes:</strong> Musk, Oakmoss, Ambergris
-            </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 10</span>
-            <h3 class="card-title">The 10Th</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 11</span>
-            <h3 class="card-title">The Flower Of The Wind</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">75ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 12</span>
-            <h3 class="card-title">Spring Flower</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 5</span>
-            <h3 class="card-title"> Heritage Blend</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">75ML</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 14</span>
-            <h3 class="card-title">Fragaria</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">75ML</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 15</span>
-            <h3 class="card-title">Love In Black</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">75ML</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 16</span>
-            <h3 class="card-title">Acqua Fiorentina</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">75ML</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 17</span>
-            <h3 class="card-title">Fleu Rissimo</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">75ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-</div>
-<footer class="footer">&copy; 2026 HYSCENT. PRECISE MASTER PERFUMERY.</footer>
-<a href="https://wa.me/8618859725858" class="whatsapp-btn">WHOLESALE ENQUIRY</a>
+    <footer>&copy; 2026 Hyscent Official. All Rights Reserved.</footer>
 </body>
 </html>

@@ -7,550 +7,243 @@
     <style>
         :root { --gold: #D4AF37; --black: #0A0A0A; --white: #F5F5F5; --gray: #888; }
         body { background: var(--black); color: var(--white); font-family: 'Times New Roman', serif; margin: 0; }
-        header { padding: 40px 5%; text-align: center; border-bottom: 1px solid #222; }
-        .logo { font-size: 2rem; letter-spacing: 8px; color: var(--gold); text-decoration: none; }
-        .hero { padding: 120px 5%; text-align: center; background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://sc02.alicdn.com/kf/A407a50968bd34c8d8816fd84c5678c23D.png'); background-size: cover; background-position: center; border-bottom: 1px solid var(--gold); }
-        .hero h1 { font-size: 3.5rem; color: var(--gold); margin-bottom: 10px; font-weight: 300; letter-spacing: 5px; }
-        .hero p { max-width: 800px; margin: 0 auto; color: var(--gray); font-style: italic; font-size: 1.2rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; padding: 80px 5%; }
-        .card { background: #111; border: 1px solid #222; overflow: hidden; transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); }
-        .card:hover { border-color: var(--gold); transform: translateY(-10px); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-        .card-content { padding: 30px; }
-        .card-no { font-size: 0.8rem; color: var(--gold); letter-spacing: 3px; font-weight: bold; }
-        .card-title { font-size: 1.5rem; margin: 15px 0; color: var(--white); font-weight: 400; line-height: 1.2; text-transform: uppercase; }
-        .card-notes { font-size: 0.85rem; color: var(--gray); margin-bottom: 25px; min-height: 80px; line-height: 1.8; border-top: 1px solid #222; padding-top: 15px; }
-        .card-notes strong { color: var(--gold); display: block; margin-top: 5px; }
-        .card-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #222; padding-top: 25px; }
-        .price { color: var(--gold); font-size: 1.3rem; font-weight: bold; }
-        .size { color: var(--gray); font-size: 0.9rem; }
-        .buy-btn { text-decoration: none; color: var(--white); border: 1px solid var(--gold); padding: 10px 20px; font-size: 0.85rem; letter-spacing: 1px; transition: 0.3s; }
-        .buy-btn:hover { background: var(--gold); color: var(--black); }
-        .footer { text-align: center; padding: 80px 5%; border-top: 1px solid #222; color: var(--gray); letter-spacing: 2px; }
-        .whatsapp-btn { position: fixed; bottom: 30px; right: 30px; background: var(--gold); color: var(--black); padding: 18px 30px; border-radius: 5px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 20px rgba(0,0,0,0.4); letter-spacing: 1px; transition: 0.3s; }
-        .whatsapp-btn:hover { transform: scale(1.05); }
+        header { padding: 20px 5%; text-align: center; border-bottom: 1px solid #222; }
+        .logo { font-size: 1.5rem; letter-spacing: 5px; color: var(--gold); text-decoration: none; text-transform: uppercase; }
+        .hero { padding: 100px 5%; text-align: center; background: #000; border-bottom: 1px solid var(--gold); }
+        .hero h1 { font-size: 3rem; color: var(--gold); margin-bottom: 10px; font-weight: 300; letter-spacing: 5px; }
+        .hero p { max-width: 800px; margin: 0 auto; color: var(--gray); font-style: italic; font-size: 1.1rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 60px 5%; }
+        .card { background: #111; border: 1px solid #222; overflow: hidden; transition: 0.4s; }
+        .card:hover { border-color: var(--gold); transform: translateY(-5px); }
+        .card-img { width: 100%; aspect-ratio: 1; overflow: hidden; }
+        .card-img img { width: 100%; height: 100%; object-fit: cover; }
+        .card-content { padding: 20px; }
+        .card-no { font-size: 0.7rem; color: var(--gold); letter-spacing: 2px; font-weight: bold; }
+        .card-title { font-size: 1.2rem; margin: 10px 0; color: var(--white); text-transform: uppercase; }
+        .card-notes { font-size: 0.8rem; color: var(--gray); min-height: 100px; border-top: 1px solid #222; padding-top: 10px; line-height: 1.6; }
+        .card-notes strong { color: var(--gold); }
+        .btn { display: block; text-align: center; padding: 10px; border: 1px solid var(--gold); color: var(--gold); text-decoration: none; margin-top: 20px; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; }
+        .btn:hover { background: var(--gold); color: #000; }
+        footer { text-align: center; padding: 40px; border-top: 1px solid #222; color: #444; font-size: 0.8rem; }
     </style>
 </head>
 <body>
-<header><a href="index.html" class="logo">HYSCENT</a></header>
-<section class="hero">
-    <h1>Private Lab</h1>
-    <p>For the connoisseur who seeks the rare and the avant-garde. Precise reconstructions of the world's most sought-after niche and private blend fragrances.</p>
-</section>
-<div class="grid">
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 41</span>
-            <h3 class="card-title">Addict Eau De</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
+    <header><a href="index.html" class="logo">Hyscent</a></header>
+    <div class="hero">
+        <h1>Private Lab</h1>
+        <p>The Niche Masterpieces. Precise interpretations of private blends.</p>
+    </div>
+    <div class="grid">
+
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="EAU DE"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 41</div>
+                <div class="card-title">EAU DE</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 41 - EAU DE" class="btn">Inquire Now</a>
             </div>
-            <div class="card-footer">
-                <span class="price">$17.99</span>
-                <span class="size">50ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/A2fff2df19ed3426d9976d61a887dcc27H.png" alt="FREEDOM AURA"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 188</div>
+                <div class="card-title">FREEDOM AURA</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 188 - FREEDOM AURA" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="YVES SAINTLAURENT"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 189</div>
+                <div class="card-title">YVES SAINTLAURENT</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 189 - YVES SAINTLAURENT" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/A8f6898b70d984b8db680d881a8563cea7.png" alt="YVES SAINT LAURENT GRAIN D YVES SAINT LAURENT GRAIN DE POUDRE"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 190</div>
+                <div class="card-title">YVES SAINT LAURENT GRAIN D YVES SAINT LAURENT GRAIN DE POUDRE</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 190 - YVES SAINT LAURENT GRAIN D YVES SAINT LAURENT GRAIN DE POUDRE" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="YVES SAINT LAURENT SAHARIENNE"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 191</div>
+                <div class="card-title">YVES SAINT LAURENT SAHARIENNE</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 191 - YVES SAINT LAURENT SAHARIENNE" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Ac4e485bb0e4d47ef9eb1cff583bc9df4g.png" alt="HOMME"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 42</div>
+                <div class="card-title">HOMME</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 42 - HOMME" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/A7c75099043f2492196b2ac457533c8dbF.png" alt="LEMON TREE"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 193</div>
+                <div class="card-title">LEMON TREE</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 193 - LEMON TREE" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="SUNNY AFTER RAIN"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 194</div>
+                <div class="card-title">SUNNY AFTER RAIN</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 194 - SUNNY AFTER RAIN" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="COFFEE BREAK"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 195</div>
+                <div class="card-title">COFFEE BREAK</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 195 - COFFEE BREAK" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Ac4e485bb0e4d47ef9eb1cff583bc9df4g.png" alt="HOMME SPORT"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 43</div>
+                <div class="card-title">HOMME SPORT</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 43 - HOMME SPORT" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="SPRINGTIME IN A PARK"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 197</div>
+                <div class="card-title">SPRINGTIME IN A PARK</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 197 - SPRINGTIME IN A PARK" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="SAILING STORIES"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 198</div>
+                <div class="card-title">SAILING STORIES</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 198 - SAILING STORIES" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="BY THE FIREPLACE"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 199</div>
+                <div class="card-title">BY THE FIREPLACE</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 199 - BY THE FIREPLACE" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="JAZZ LOUNGE"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 200</div>
+                <div class="card-title">JAZZ LOUNGE</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 200 - JAZZ LOUNGE" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="CHLO -- CHLO CEDRUS"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 101</div>
+                <div class="card-title">CHLO -- CHLO CEDRUS</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 101 - CHLO -- CHLO CEDRUS" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="MAGNOLIA ALBA"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 461</div>
+                <div class="card-title">MAGNOLIA ALBA</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 461 - MAGNOLIA ALBA" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="L'EAU DE RSEFUM"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 462</div>
+                <div class="card-title">L'EAU DE RSEFUM</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 462 - L'EAU DE RSEFUM" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="EAU DE NATURAL SPRAY VAPORISATEUR"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 463</div>
+                <div class="card-title">EAU DE NATURAL SPRAY VAPORISATEUR</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 463 - EAU DE NATURAL SPRAY VAPORISATEUR" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="SYCOMORE"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 102</div>
+                <div class="card-title">SYCOMORE</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 102 - SYCOMORE" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="DREAM FOREST"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 465</div>
+                <div class="card-title">DREAM FOREST</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 465 - DREAM FOREST" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="EAU DE CALIFORNIE"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 466</div>
+                <div class="card-title">EAU DE CALIFORNIE</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 466 - EAU DE CALIFORNIE" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="REPTILE"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 467</div>
+                <div class="card-title">REPTILE</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 467 - REPTILE" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="LE LION DE"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 103</div>
+                <div class="card-title">LE LION DE</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 103 - LE LION DE" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="L'HEURE VERTE"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 469</div>
+                <div class="card-title">L'HEURE VERTE</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 469 - L'HEURE VERTE" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/A9ee1298c593f4fb1a82f27a6086dc583p.png" alt="BLUE MOON GINGER DASH"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 470</div>
+                <div class="card-title">BLUE MOON GINGER DASH</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 470 - BLUE MOON GINGER DASH" class="btn">Inquire Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="https://sc01.alicdn.com/kf/Aad06f3d8699d4d2db6a5dcc6b08abc17e.png" alt="APPLE BRANDY"></div>
+            <div class="card-content">
+                <div class="card-no">CODE: 471</div>
+                <div class="card-title">APPLE BRANDY</div>
+                <a href="https://wa.me/8618859725858?text=Inquiry for Product Code: 471 - APPLE BRANDY" class="btn">Inquire Now</a>
             </div>
         </div>
     </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 188</span>
-            <h3 class="card-title">Freedom Aura</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Lavender, Mandarin
-                <strong>Middle Notes:</strong> Orange Blossom
-                <strong>Base Notes:</strong> Vanilla, Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$17.99</span>
-                <span class="size">90ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 189</span>
-            <h3 class="card-title">Yves Saintlaurent</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$19.99</span>
-                <span class="size">90ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 190</span>
-            <h3 class="card-title">Yves Saint Laurent Grain D Yves Saint Laurent Grain De Poudre</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Cardamom, Cedar
-                <strong>Middle Notes:</strong> Sandalwood, Vetiver
-                <strong>Base Notes:</strong> Musk, Amber
-            </div>
-            <div class="card-footer">
-                <span class="price">$16.99</span>
-                <span class="size">75ML</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 191</span>
-            <h3 class="card-title">Yves Saint Laurent Saharienne</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$16.99</span>
-                <span class="size">75ML</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 42</span>
-            <h3 class="card-title">Homme</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Cardamom, Cedar
-                <strong>Middle Notes:</strong> Sandalwood, Vetiver
-                <strong>Base Notes:</strong> Musk, Amber
-            </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 193</span>
-            <h3 class="card-title">Lemon Tree</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Bergamot, Lemon
-                <strong>Middle Notes:</strong> Green Tea, Jasmine
-                <strong>Base Notes:</strong> White Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 194</span>
-            <h3 class="card-title">Sunny After Rain</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 195</span>
-            <h3 class="card-title">Coffee Break</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 43</span>
-            <h3 class="card-title">Homme Sport</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Cardamom, Cedar
-                <strong>Middle Notes:</strong> Sandalwood, Vetiver
-                <strong>Base Notes:</strong> Musk, Amber
-            </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 197</span>
-            <h3 class="card-title">Springtime In A Park</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 198</span>
-            <h3 class="card-title">Sailing Stories</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 199</span>
-            <h3 class="card-title">By The Fireplace</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 200</span>
-            <h3 class="card-title">Jazz Lounge</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 100</span>
-            <h3 class="card-title">Ml Bottled</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 456</span>
-            <h3 class="card-title">Fox</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$23.99</span>
-                <span class="size">75ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 457</span>
-            <h3 class="card-title">Lion</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$23.99</span>
-                <span class="size">75ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 458</span>
-            <h3 class="card-title">Deer Head</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$23.99</span>
-                <span class="size">75ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 459</span>
-            <h3 class="card-title">Goat</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$23.99</span>
-                <span class="size">75ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 102</span>
-            <h3 class="card-title">Sycomore</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$19.99</span>
-                <span class="size">100ML</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 465</span>
-            <h3 class="card-title">Dream Forest</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$19.99</span>
-                <span class="size">100ML</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 466</span>
-            <h3 class="card-title">Eau De Californie</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$19.99</span>
-                <span class="size">100ML</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 467</span>
-            <h3 class="card-title">Reptile</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$19.99</span>
-                <span class="size">100ML</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 103</span>
-            <h3 class="card-title">Le Lion De</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$19.99</span>
-                <span class="size">100ML</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 469</span>
-            <h3 class="card-title">L'Heure Verte</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$17.99</span>
-                <span class="size">50ML</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 470</span>
-            <h3 class="card-title">Blue Moon Ginger Dash</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Bergamot, Lemon
-                <strong>Middle Notes:</strong> Green Tea, Jasmine
-                <strong>Base Notes:</strong> White Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$17.99</span>
-                <span class="size">50ML</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 471</span>
-            <h3 class="card-title">Apple Brandy</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$17.99</span>
-                <span class="size">50ML</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 110</span>
-            <h3 class="card-title">Hexagonal</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$19.99</span>
-                <span class="size">125ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 500</span>
-            <h3 class="card-title">Bloom</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$19.99</span>
-                <span class="size">125ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 501</span>
-            <h3 class="card-title">Bloom</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$19.99</span>
-                <span class="size">125ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 502</span>
-            <h3 class="card-title">Bloom</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$19.99</span>
-                <span class="size">125ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">ITEM CODE: 503</span>
-            <h3 class="card-title">Bloom</h3>
-            <div class="card-notes">
-                <strong>Top Notes:</strong> Rose, Jasmine, Peony
-                <strong>Middle Notes:</strong> Lily-of-the-Valley
-                <strong>Base Notes:</strong> Musk
-            </div>
-            <div class="card-footer">
-                <span class="price">$19.99</span>
-                <span class="size">125ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-</div>
-<footer class="footer">&copy; 2026 HYSCENT. PRECISE MASTER PERFUMERY.</footer>
-<a href="https://wa.me/8618859725858" class="whatsapp-btn">WHOLESALE ENQUIRY</a>
+    <footer>&copy; 2026 Hyscent Official. All Rights Reserved.</footer>
 </body>
 </html>
