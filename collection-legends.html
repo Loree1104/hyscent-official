@@ -9,23 +9,24 @@
         body { background: var(--black); color: var(--white); font-family: 'Times New Roman', serif; margin: 0; }
         header { padding: 40px 5%; text-align: center; border-bottom: 1px solid #222; }
         .logo { font-size: 2rem; letter-spacing: 8px; color: var(--gold); text-decoration: none; }
-        .hero { padding: 80px 5%; text-align: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&q=80&w=1200'); background-size: cover; background-position: center; }
-        .hero h1 { font-size: 3rem; color: var(--gold); margin-bottom: 10px; font-weight: 300; }
-        .hero p { max-width: 700px; margin: 0 auto; color: var(--gray); font-style: italic; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; padding: 60px 5%; }
-        .card { background: #111; border: 1px solid #222; overflow: hidden; transition: 0.3s; }
-        .card:hover { border-color: var(--gold); transform: translateY(-5px); }
-        .card-img { width: 100%; height: 350px; object-fit: cover; background: #0a0a0a; }
-        .card-content { padding: 25px; }
-        .card-no { font-size: 0.8rem; color: var(--gold); letter-spacing: 2px; }
-        .card-title { font-size: 1.4rem; margin: 10px 0; color: var(--white); font-weight: 400; }
-        .card-desc { font-size: 0.9rem; color: var(--gray); margin-bottom: 20px; min-height: 60px; }
-        .card-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #222; padding-top: 20px; }
-        .price { color: var(--gold); font-size: 1.2rem; }
-        .buy-btn { text-decoration: none; color: var(--white); border: 1px solid var(--white); padding: 8px 15px; font-size: 0.8rem; transition: 0.3s; }
-        .buy-btn:hover { background: var(--gold); border-color: var(--gold); color: var(--black); }
-        .footer { text-align: center; padding: 60px 5%; border-top: 1px solid #222; color: var(--gray); }
-        .whatsapp-btn { position: fixed; bottom: 30px; right: 30px; background: #25D366; color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+        .hero { padding: 120px 5%; text-align: center; background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://sc02.alicdn.com/kf/A19f318d017ab4cdfb046d691874ba9e5G.png'); background-size: cover; background-position: center; border-bottom: 1px solid var(--gold); }
+        .hero h1 { font-size: 3.5rem; color: var(--gold); margin-bottom: 10px; font-weight: 300; letter-spacing: 5px; }
+        .hero p { max-width: 800px; margin: 0 auto; color: var(--gray); font-style: italic; font-size: 1.2rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; padding: 80px 5%; }
+        .card { background: #111; border: 1px solid #222; overflow: hidden; transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); }
+        .card:hover { border-color: var(--gold); transform: translateY(-10px); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .card-content { padding: 30px; }
+        .card-no { font-size: 0.8rem; color: var(--gold); letter-spacing: 3px; font-weight: bold; }
+        .card-title { font-size: 1.5rem; margin: 15px 0; color: var(--white); font-weight: 400; line-height: 1.2; }
+        .card-desc { font-size: 0.95rem; color: var(--gray); margin-bottom: 25px; min-height: 70px; line-height: 1.6; }
+        .card-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #222; padding-top: 25px; }
+        .price { color: var(--gold); font-size: 1.3rem; font-weight: bold; }
+        .size { color: var(--gray); font-size: 0.9rem; }
+        .buy-btn { text-decoration: none; color: var(--white); border: 1px solid var(--gold); padding: 10px 20px; font-size: 0.85rem; letter-spacing: 1px; transition: 0.3s; }
+        .buy-btn:hover { background: var(--gold); color: var(--black); }
+        .footer { text-align: center; padding: 80px 5%; border-top: 1px solid #222; color: var(--gray); letter-spacing: 2px; }
+        .whatsapp-btn { position: fixed; bottom: 30px; right: 30px; background: var(--gold); color: var(--black); padding: 18px 30px; border-radius: 5px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 20px rgba(0,0,0,0.4); letter-spacing: 1px; transition: 0.3s; }
+        .whatsapp-btn:hover { transform: scale(1.05); }
     </style>
 </head>
 <body>
@@ -39,23 +40,23 @@
         <div class="card-content">
             <span class="card-no">NO. 2</span>
             <h3 class="card-title">CREED Silver Spring</h3>
-            <p class="card-desc">Mastercrafted 1:1 interpretation inspired by CREED's legendary profile. A seamless blend of premium essences, achieving 96% olfactory parity with the original formula data.</p>
+            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">INQUIRE</a>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
             </div>
         </div>
     </div>
     <div class="card">
         <div class="card-content">
             <span class="card-no">NO. 3</span>
-            <h3 class="card-title">3 拿破仑馥郁版 礼盒 CREED The water of success</h3>
-            <p class="card-desc">Mastercrafted 1:1 interpretation inspired by CREED's legendary profile. A seamless blend of premium essences, achieving 96% olfactory parity with the original formula data.</p>
+            <h3 class="card-title">3   CREED The water of success</h3>
+            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
             <div class="card-footer">
                 <span class="price">$19.99</span>
                 <span class="size">75ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">INQUIRE</a>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
             </div>
         </div>
     </div>
@@ -63,11 +64,11 @@
         <div class="card-content">
             <span class="card-no">NO. 4</span>
             <h3 class="card-title">CREED Aventus Cologne</h3>
-            <p class="card-desc">Mastercrafted 1:1 interpretation inspired by CREED's legendary profile. A seamless blend of premium essences, achieving 96% olfactory parity with the original formula data.</p>
+            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">INQUIRE</a>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
             </div>
         </div>
     </div>
@@ -75,11 +76,11 @@
         <div class="card-content">
             <span class="card-no">NO. 5</span>
             <h3 class="card-title">CREED LOVE IN WHITE</h3>
-            <p class="card-desc">Mastercrafted 1:1 interpretation inspired by CREED's legendary profile. A seamless blend of premium essences, achieving 96% olfactory parity with the original formula data.</p>
+            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">75ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">INQUIRE</a>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
             </div>
         </div>
     </div>
@@ -87,11 +88,11 @@
         <div class="card-content">
             <span class="card-no">NO. 6</span>
             <h3 class="card-title">CREED HIMALAYA</h3>
-            <p class="card-desc">Mastercrafted 1:1 interpretation inspired by CREED's legendary profile. A seamless blend of premium essences, achieving 96% olfactory parity with the original formula data.</p>
+            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">INQUIRE</a>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
             </div>
         </div>
     </div>
@@ -99,23 +100,23 @@
         <div class="card-content">
             <span class="card-no">NO. 7</span>
             <h3 class="card-title">CREED Millesime 1849</h3>
-            <p class="card-desc">Mastercrafted 1:1 interpretation inspired by CREED's legendary profile. A seamless blend of premium essences, achieving 96% olfactory parity with the original formula data.</p>
+            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">INQUIRE</a>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
             </div>
         </div>
     </div>
     <div class="card">
         <div class="card-content">
             <span class="card-no">NO. 4</span>
-            <h3 class="card-title">8 燃情绯红卡米 娜 CREED CARMINA</h3>
-            <p class="card-desc">Mastercrafted 1:1 interpretation inspired by CREED's legendary profile. A seamless blend of premium essences, achieving 96% olfactory parity with the original formula data.</p>
+            <h3 class="card-title">8   CREED CARMINA</h3>
+            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">INQUIRE</a>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
             </div>
         </div>
     </div>
@@ -123,11 +124,11 @@
         <div class="card-content">
             <span class="card-no">NO. 9</span>
             <h3 class="card-title">CREED Aventus for Her</h3>
-            <p class="card-desc">Mastercrafted 1:1 interpretation inspired by CREED's legendary profile. A seamless blend of premium essences, achieving 96% olfactory parity with the original formula data.</p>
+            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">INQUIRE</a>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
             </div>
         </div>
     </div>
@@ -135,11 +136,11 @@
         <div class="card-content">
             <span class="card-no">NO. 10</span>
             <h3 class="card-title">CREED QUEEN OF SILK</h3>
-            <p class="card-desc">Mastercrafted 1:1 interpretation inspired by CREED's legendary profile. A seamless blend of premium essences, achieving 96% olfactory parity with the original formula data.</p>
+            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">INQUIRE</a>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
             </div>
         </div>
     </div>
@@ -147,11 +148,11 @@
         <div class="card-content">
             <span class="card-no">NO. 11</span>
             <h3 class="card-title">CREED The flower of the wind</h3>
-            <p class="card-desc">Mastercrafted 1:1 interpretation inspired by CREED's legendary profile. A seamless blend of premium essences, achieving 96% olfactory parity with the original formula data.</p>
+            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">75ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">INQUIRE</a>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
             </div>
         </div>
     </div>
@@ -159,23 +160,23 @@
         <div class="card-content">
             <span class="card-no">NO. 12</span>
             <h3 class="card-title">CREED Spring Flower</h3>
-            <p class="card-desc">Mastercrafted 1:1 interpretation inspired by CREED's legendary profile. A seamless blend of premium essences, achieving 96% olfactory parity with the original formula data.</p>
+            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">INQUIRE</a>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
             </div>
         </div>
     </div>
     <div class="card">
         <div class="card-content">
             <span class="card-no">NO. 5</span>
-            <h3 class="card-title">13 皇家公主乌 木 CREED Royal Princess Oud</h3>
-            <p class="card-desc">Mastercrafted 1:1 interpretation inspired by CREED's legendary profile. A seamless blend of premium essences, achieving 96% olfactory parity with the original formula data.</p>
+            <h3 class="card-title">13   CREED Royal Princess Oud</h3>
+            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">75ML</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">INQUIRE</a>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
             </div>
         </div>
     </div>
@@ -183,11 +184,11 @@
         <div class="card-content">
             <span class="card-no">NO. 14</span>
             <h3 class="card-title">CREED Fragaria</h3>
-            <p class="card-desc">Mastercrafted 1:1 interpretation inspired by CREED's legendary profile. A seamless blend of premium essences, achieving 96% olfactory parity with the original formula data.</p>
+            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">75ML</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">INQUIRE</a>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
             </div>
         </div>
     </div>
@@ -195,11 +196,11 @@
         <div class="card-content">
             <span class="card-no">NO. 15</span>
             <h3 class="card-title">CREED Love in Black</h3>
-            <p class="card-desc">Mastercrafted 1:1 interpretation inspired by CREED's legendary profile. A seamless blend of premium essences, achieving 96% olfactory parity with the original formula data.</p>
+            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">75ML</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">INQUIRE</a>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
             </div>
         </div>
     </div>
@@ -207,11 +208,11 @@
         <div class="card-content">
             <span class="card-no">NO. 16</span>
             <h3 class="card-title">CREED Acqua Fiorentina</h3>
-            <p class="card-desc">Mastercrafted 1:1 interpretation inspired by CREED's legendary profile. A seamless blend of premium essences, achieving 96% olfactory parity with the original formula data.</p>
+            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">75ML</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">INQUIRE</a>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
             </div>
         </div>
     </div>
@@ -219,16 +220,16 @@
         <div class="card-content">
             <span class="card-no">NO. 17</span>
             <h3 class="card-title">CREED Fleu rissimo</h3>
-            <p class="card-desc">Mastercrafted 1:1 interpretation inspired by CREED's legendary profile. A seamless blend of premium essences, achieving 96% olfactory parity with the original formula data.</p>
+            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">75ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">INQUIRE</a>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
             </div>
         </div>
     </div>
 </div>
-<footer class="footer">&copy; 2026 HYSCENT. Global 1:1 Master Perfumery.</footer>
-<a href="https://wa.me/8618859725858" class="whatsapp-btn">Wholesale Inquiry</a>
+<footer class="footer">&copy; 2026 HYSCENT. PRECISE MASTER PERFUMERY.</footer>
+<a href="https://wa.me/8618859725858" class="whatsapp-btn">WHOLESALE ENQUIRY</a>
 </body>
 </html>
