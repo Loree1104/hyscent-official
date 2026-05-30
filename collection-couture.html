@@ -17,8 +17,9 @@
         .card:hover { border-color: var(--gold); transform: translateY(-10px); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
         .card-content { padding: 30px; }
         .card-no { font-size: 0.8rem; color: var(--gold); letter-spacing: 3px; font-weight: bold; }
-        .card-title { font-size: 1.5rem; margin: 15px 0; color: var(--white); font-weight: 400; line-height: 1.2; }
-        .card-desc { font-size: 0.95rem; color: var(--gray); margin-bottom: 25px; min-height: 70px; line-height: 1.6; }
+        .card-title { font-size: 1.5rem; margin: 15px 0; color: var(--white); font-weight: 400; line-height: 1.2; text-transform: uppercase; }
+        .card-notes { font-size: 0.85rem; color: var(--gray); margin-bottom: 25px; min-height: 80px; line-height: 1.8; border-top: 1px solid #222; padding-top: 15px; }
+        .card-notes strong { color: var(--gold); display: block; margin-top: 5px; }
         .card-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #222; padding-top: 25px; }
         .price { color: var(--gold); font-size: 1.3rem; font-weight: bold; }
         .size { color: var(--gray); font-size: 0.9rem; }
@@ -38,9 +39,13 @@
 <div class="grid">
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 6</span>
-            <h3 class="card-title">Dior 18  DIOR-MISS BLOOMING BOUQUET</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Dior's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 6</span>
+            <h3 class="card-title">Glacier Peak</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Grapefruit, Lemon
+                <strong>Middle Notes:</strong> Gunpowder, Juniper
+                <strong>Base Notes:</strong> Sandalwood, Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -50,9 +55,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 19</span>
-            <h3 class="card-title">DIOR-MISS BLOOMING BOUQUET</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Dior's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 19</span>
+            <h3 class="card-title">Petal Whisper</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Mandarin
+                <strong>Middle Notes:</strong> Peony, Rose
+                <strong>Base Notes:</strong> White Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -62,9 +71,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 20</span>
-            <h3 class="card-title">DIOR-MISS BLOOMING BOUQUET</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Dior's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 20</span>
+            <h3 class="card-title">Petal Whisper</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Mandarin
+                <strong>Middle Notes:</strong> Peony, Rose
+                <strong>Base Notes:</strong> White Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -74,9 +87,29 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 21</span>
+            <span class="card-no">ITEM CODE: 21</span>
+            <h3 class="card-title">Goddess Aura</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">100ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 7</span>
             <h3 class="card-title">Dior-jodore</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Dior's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Bergamot, Lemon, Pepper
+                <strong>Middle Notes:</strong> Jasmine, Rose, Patchouli
+                <strong>Base Notes:</strong> Musk, Amber, Sandalwood
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -86,9 +119,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 7</span>
-            <h3 class="card-title">22  Dior-jodore</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Dior's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 23</span>
+            <h3 class="card-title">Goddess Aura</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -98,9 +135,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 23</span>
-            <h3 class="card-title">Dior-jodore</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Dior's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 24</span>
+            <h3 class="card-title">Mystery</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -110,9 +151,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 24</span>
-            <h3 class="card-title">Dior-jodore</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Dior's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 25</span>
+            <h3 class="card-title">The 25Th</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -122,9 +167,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 25</span>
-            <h3 class="card-title">Dior-Addict Eau Fraiche</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Dior's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 26</span>
+            <h3 class="card-title">Mystery</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -134,9 +183,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 26</span>
-            <h3 class="card-title">Dior-Sauvage EDT</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Dior's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 8</span>
+            <h3 class="card-title">Carmina</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -146,9 +199,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 8</span>
-            <h3 class="card-title">27  Dior-Sauvage EDP</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Dior's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 28</span>
+            <h3 class="card-title">The 28Th</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -158,21 +215,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 28</span>
-            <h3 class="card-title">Dior-Sauvage Parfum</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Dior's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            <span class="card-no">ITEM CODE: 29</span>
+            <h3 class="card-title">Baby Bonne Etoile</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
             </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 29</span>
-            <h3 class="card-title">DIOR Baby Bonne Etoile</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Dior's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
             <div class="card-footer">
                 <span class="price">$24.99</span>
                 <span class="size">100ml</span>
@@ -182,9 +231,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 30</span>
-            <h3 class="card-title">DIOR-CHRISTIAN LUCKY</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Dior's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 30</span>
+            <h3 class="card-title">Christian Lucky</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$17.99</span>
                 <span class="size">125ml</span>
@@ -194,9 +247,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 31</span>
-            <h3 class="card-title">DIOR-CHRISTIAN ROSE KABUKI</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Dior's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 31</span>
+            <h3 class="card-title">The 31Th</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$17.99</span>
                 <span class="size">125ml</span>
@@ -206,9 +263,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 9</span>
-            <h3 class="card-title">32  DIOR-CHRISTIAN D'ARGENT</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Dior's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 9</span>
+            <h3 class="card-title">Successor's Legend</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Pineapple, Apple, Bergamot
+                <strong>Middle Notes:</strong> Birch, Patchouli, Jasmine
+                <strong>Base Notes:</strong> Musk, Oakmoss, Ambergris
+            </div>
             <div class="card-footer">
                 <span class="price">$17.99</span>
                 <span class="size">125ml</span>
@@ -218,9 +279,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 33</span>
-            <h3 class="card-title">DIOR-CHRISTIAN SAKURA</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Dior's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 33</span>
+            <h3 class="card-title">Christian Sakura</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$17.99</span>
                 <span class="size">125ml</span>
@@ -230,9 +295,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 34</span>
-            <h3 class="card-title">DIOR-CHRISTIAN LA COLLE NORE</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Dior's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 34</span>
+            <h3 class="card-title">Christian La Colle Nore</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$17.99</span>
                 <span class="size">125ml</span>
@@ -242,9 +311,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 35</span>
-            <h3 class="card-title">Dior Homme (EDT)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Dior's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 35</span>
+            <h3 class="card-title">Homme ()</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Cardamom, Cedar
+                <strong>Middle Notes:</strong> Sandalwood, Vetiver
+                <strong>Base Notes:</strong> Musk, Amber
+            </div>
             <div class="card-footer">
                 <span class="price">$21.99</span>
                 <span class="size">100ml</span>
@@ -254,9 +327,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 36</span>
-            <h3 class="card-title">Dior HOMME INTENSE</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Dior's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 36</span>
+            <h3 class="card-title">Homme</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Cardamom, Cedar
+                <strong>Middle Notes:</strong> Sandalwood, Vetiver
+                <strong>Base Notes:</strong> Musk, Amber
+            </div>
             <div class="card-footer">
                 <span class="price">$21.99</span>
                 <span class="size">100ml</span>
@@ -266,9 +343,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 10</span>
-            <h3 class="card-title">37   Dior-Sauvage (ELIXIR)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Dior's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 10</span>
+            <h3 class="card-title">The 10Th</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$19.99</span>
                 <span class="size">60ml</span>
@@ -278,9 +359,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 38</span>
-            <h3 class="card-title">Dior Hypnotic Poison (EDT)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Dior's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 38</span>
+            <h3 class="card-title">Hypnotic Poison ()</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -290,9 +375,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 39</span>
-            <h3 class="card-title">Dior pure poison</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Dior's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 39</span>
+            <h3 class="card-title">The 39Th</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -302,9 +391,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 40</span>
-            <h3 class="card-title">DIOR-MISS ROSE ESSENCE</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Dior's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 40</span>
+            <h3 class="card-title">Miss Rose Essence</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -314,9 +407,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 41</span>
-            <h3 class="card-title">Dior-Addict EAU DE PARFUM</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Dior's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 41</span>
+            <h3 class="card-title">Addict Eau De</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ML</span>
@@ -326,9 +423,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 14</span>
-            <h3 class="card-title">56 57  CHANEL chance-yellow (EDP)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 14</span>
+            <h3 class="card-title">Fragaria</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -338,9 +439,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 58</span>
-            <h3 class="card-title">coco CHANEL COCO Mademoiselle L'EAU PRIVEE</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 58</span>
+            <h3 class="card-title">Midnight Muse</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Orange, Bergamot
+                <strong>Middle Notes:</strong> Rose, Jasmine
+                <strong>Base Notes:</strong> Patchouli, Vanilla
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -350,9 +455,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 59</span>
-            <h3 class="card-title">coco CHANEL COCO Mademoiselle EDP</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 59</span>
+            <h3 class="card-title">Midnight Muse</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Orange, Bergamot
+                <strong>Middle Notes:</strong> Rose, Jasmine
+                <strong>Base Notes:</strong> Patchouli, Vanilla
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -362,9 +471,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 15</span>
-            <h3 class="card-title">60  co CHANEL COCO Mademoiselle EDP INTENSE</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 15</span>
+            <h3 class="card-title">Love In Black</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -374,9 +487,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 61</span>
-            <h3 class="card-title">CO CHANEL COCOBLACK</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 61</span>
+            <h3 class="card-title">Co Cocoblack</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -386,297 +503,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 62</span>
-            <h3 class="card-title">5  CHANEL N5</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 63</span>
-            <h3 class="card-title">CHANEL N5(EDP)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 64</span>
-            <h3 class="card-title">CHANEL chance-green (EDT)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 16</span>
-            <h3 class="card-title">65  CHANEL chance-pink (EDT)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 66</span>
-            <h3 class="card-title">CHANEL chance-yellow (EDT)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 67</span>
-            <h3 class="card-title">CHANEL chance-pink (EDP)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 68</span>
-            <h3 class="card-title">CHANEL chance-green (EDP)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 69</span>
-            <h3 class="card-title">CHANEL N5-RED</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 17</span>
-            <h3 class="card-title">70  CHANEL N5-RED (EDP)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">100ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 71</span>
-            <h3 class="card-title">COCO CHANEL COCO Mademoiselle EDP INTENSE</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">50ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 72</span>
-            <h3 class="card-title">COCO CHANEL COCO Mademoiselle L'EAU PRIVEE</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">50ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 73</span>
-            <h3 class="card-title">COCO CHANEL COCO Mademoiselle EDP</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">50ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 74</span>
-            <h3 class="card-title">5  CHANEL N5</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">50ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 18</span>
-            <h3 class="card-title">75  CHANEL N5(EDP)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">50ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 76</span>
-            <h3 class="card-title">CHANEL chance-pink (EDP)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">50ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 77</span>
-            <h3 class="card-title">CHANEL chance-green (EDP)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">50ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 78</span>
-            <h3 class="card-title">CHANEL chance-pink (EDT)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">50ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 79</span>
-            <h3 class="card-title">CHANEL chance-yellow (EDT)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">50ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 19</span>
-            <h3 class="card-title">80  CHANEL chance-green (EDT)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">50ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 81</span>
-            <h3 class="card-title">Co CHANEL COCO Mademoiselle EDP</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">35ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 82</span>
+            <span class="card-no">ITEM CODE: 62</span>
             <h3 class="card-title">CHANEL N5</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">35ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Bergamot, Lemon, Pepper
+                <strong>Middle Notes:</strong> Jasmine, Rose, Patchouli
+                <strong>Base Notes:</strong> Musk, Amber, Sandalwood
             </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 83</span>
-            <h3 class="card-title">CHANEL chance-pink (EDT)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">35ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 84</span>
-            <h3 class="card-title">CHANEL chance-green (EDT)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">35ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 20</span>
-            <h3 class="card-title">85  CHANEL chance-yellow (EDT)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
-            <div class="card-footer">
-                <span class="price">$15.99</span>
-                <span class="size">35ml</span>
-                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-no">NO. 86</span>
-            <h3 class="card-title">CHANEL BLEU (EDP)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -686,9 +519,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 87</span>
-            <h3 class="card-title">CHANEL BLEU (EDT)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 63</span>
+            <h3 class="card-title">CHANEL N5(EDP)</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Bergamot, Lemon, Pepper
+                <strong>Middle Notes:</strong> Jasmine, Rose, Patchouli
+                <strong>Base Notes:</strong> Musk, Amber, Sandalwood
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -698,9 +535,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 88</span>
-            <h3 class="card-title">CHANEL BLEU PARFUM</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 64</span>
+            <h3 class="card-title">Golden Luck</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Lemon, Pineapple
+                <strong>Middle Notes:</strong> Jasmine, Hyacinth
+                <strong>Base Notes:</strong> Musk, Patchouli
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -710,9 +551,109 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 89</span>
-            <h3 class="card-title">CHANEL BLEU (EDT)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 16</span>
+            <h3 class="card-title">Acqua Fiorentina</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">100ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 66</span>
+            <h3 class="card-title">Golden Luck</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Lemon, Pineapple
+                <strong>Middle Notes:</strong> Jasmine, Hyacinth
+                <strong>Base Notes:</strong> Musk, Patchouli
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">100ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 67</span>
+            <h3 class="card-title">Golden Luck</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Lemon, Pineapple
+                <strong>Middle Notes:</strong> Jasmine, Hyacinth
+                <strong>Base Notes:</strong> Musk, Patchouli
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">100ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 68</span>
+            <h3 class="card-title">Golden Luck</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Lemon, Pineapple
+                <strong>Middle Notes:</strong> Jasmine, Hyacinth
+                <strong>Base Notes:</strong> Musk, Patchouli
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">100ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 69</span>
+            <h3 class="card-title">CHANEL N5-RED</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Bergamot, Lemon, Pepper
+                <strong>Middle Notes:</strong> Jasmine, Rose, Patchouli
+                <strong>Base Notes:</strong> Musk, Amber, Sandalwood
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">100ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 17</span>
+            <h3 class="card-title">Fleu Rissimo</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">100ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 71</span>
+            <h3 class="card-title">Midnight Muse</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Orange, Bergamot
+                <strong>Middle Notes:</strong> Rose, Jasmine
+                <strong>Base Notes:</strong> Patchouli, Vanilla
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">50ml</span>
@@ -722,9 +663,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 21</span>
-            <h3 class="card-title">90  CHANEL BLEU (EDP)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 72</span>
+            <h3 class="card-title">Midnight Muse</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Orange, Bergamot
+                <strong>Middle Notes:</strong> Rose, Jasmine
+                <strong>Base Notes:</strong> Patchouli, Vanilla
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">50ml</span>
@@ -734,9 +679,221 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 91</span>
-            <h3 class="card-title">CHANEL GABRIELL (EDP)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 73</span>
+            <h3 class="card-title">Midnight Muse</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Orange, Bergamot
+                <strong>Middle Notes:</strong> Rose, Jasmine
+                <strong>Base Notes:</strong> Patchouli, Vanilla
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">50ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 74</span>
+            <h3 class="card-title">CHANEL N5</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Bergamot, Lemon, Pepper
+                <strong>Middle Notes:</strong> Jasmine, Rose, Patchouli
+                <strong>Base Notes:</strong> Musk, Amber, Sandalwood
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">50ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 18</span>
+            <h3 class="card-title">Petal Whisper</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Mandarin
+                <strong>Middle Notes:</strong> Peony, Rose
+                <strong>Base Notes:</strong> White Musk
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">50ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 76</span>
+            <h3 class="card-title">Golden Luck</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Lemon, Pineapple
+                <strong>Middle Notes:</strong> Jasmine, Hyacinth
+                <strong>Base Notes:</strong> Musk, Patchouli
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">50ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 77</span>
+            <h3 class="card-title">Golden Luck</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Lemon, Pineapple
+                <strong>Middle Notes:</strong> Jasmine, Hyacinth
+                <strong>Base Notes:</strong> Musk, Patchouli
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">50ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 78</span>
+            <h3 class="card-title">Golden Luck</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Lemon, Pineapple
+                <strong>Middle Notes:</strong> Jasmine, Hyacinth
+                <strong>Base Notes:</strong> Musk, Patchouli
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">50ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 79</span>
+            <h3 class="card-title">Golden Luck</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Lemon, Pineapple
+                <strong>Middle Notes:</strong> Jasmine, Hyacinth
+                <strong>Base Notes:</strong> Musk, Patchouli
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">50ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 19</span>
+            <h3 class="card-title">Petal Whisper</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Mandarin
+                <strong>Middle Notes:</strong> Peony, Rose
+                <strong>Base Notes:</strong> White Musk
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">50ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 81</span>
+            <h3 class="card-title">Midnight Muse</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Orange, Bergamot
+                <strong>Middle Notes:</strong> Rose, Jasmine
+                <strong>Base Notes:</strong> Patchouli, Vanilla
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">35ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 82</span>
+            <h3 class="card-title">CHANEL N5</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Bergamot, Lemon, Pepper
+                <strong>Middle Notes:</strong> Jasmine, Rose, Patchouli
+                <strong>Base Notes:</strong> Musk, Amber, Sandalwood
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">35ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 83</span>
+            <h3 class="card-title">Golden Luck</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Lemon, Pineapple
+                <strong>Middle Notes:</strong> Jasmine, Hyacinth
+                <strong>Base Notes:</strong> Musk, Patchouli
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">35ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 84</span>
+            <h3 class="card-title">Golden Luck</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Lemon, Pineapple
+                <strong>Middle Notes:</strong> Jasmine, Hyacinth
+                <strong>Base Notes:</strong> Musk, Patchouli
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">35ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 20</span>
+            <h3 class="card-title">Petal Whisper</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Mandarin
+                <strong>Middle Notes:</strong> Peony, Rose
+                <strong>Base Notes:</strong> White Musk
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">35ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 86</span>
+            <h3 class="card-title">Azure Depths</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Grapefruit, Lemon
+                <strong>Middle Notes:</strong> Ginger, Jasmine
+                <strong>Base Notes:</strong> Incense, Cedar
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -746,9 +903,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 92</span>
-            <h3 class="card-title">CHANEL GABRIELL EESSENCE</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 87</span>
+            <h3 class="card-title">Azure Depths</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Grapefruit, Lemon
+                <strong>Middle Notes:</strong> Ginger, Jasmine
+                <strong>Base Notes:</strong> Incense, Cedar
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -758,9 +919,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 93</span>
-            <h3 class="card-title">CHANEL ALLURE HOMME SPORT (EDT)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 88</span>
+            <h3 class="card-title">Azure Depths</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Grapefruit, Lemon
+                <strong>Middle Notes:</strong> Ginger, Jasmine
+                <strong>Base Notes:</strong> Incense, Cedar
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -770,9 +935,93 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 94</span>
-            <h3 class="card-title">CHANEL ALLURE HOMME SPORT (EAU)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 89</span>
+            <h3 class="card-title">Azure Depths</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Grapefruit, Lemon
+                <strong>Middle Notes:</strong> Ginger, Jasmine
+                <strong>Base Notes:</strong> Incense, Cedar
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">50ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 21</span>
+            <h3 class="card-title">Goddess Aura</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">50ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 91</span>
+            <h3 class="card-title">Gabriell ()</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">100ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 92</span>
+            <h3 class="card-title">Gabriell Eessence</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">100ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 93</span>
+            <h3 class="card-title">Allure Homme Sport ()</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Cardamom, Cedar
+                <strong>Middle Notes:</strong> Sandalwood, Vetiver
+                <strong>Base Notes:</strong> Musk, Amber
+            </div>
+            <div class="card-footer">
+                <span class="price">$15.99</span>
+                <span class="size">100ml</span>
+                <a href="https://wa.me/8618859725858" class="buy-btn">ORDER</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-no">ITEM CODE: 94</span>
+            <h3 class="card-title">Allure Homme Sport (Eau)</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Cardamom, Cedar
+                <strong>Middle Notes:</strong> Sandalwood, Vetiver
+                <strong>Base Notes:</strong> Musk, Amber
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ML</span>
@@ -782,9 +1031,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 22</span>
-            <h3 class="card-title">95   CHANEL ALLURE HOMME SPORT EAU DE PARFUM)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 22</span>
+            <h3 class="card-title">Mystery</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ML</span>
@@ -794,9 +1047,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 96</span>
-            <h3 class="card-title">CHANEL ALLURE HOMME SPORT COLOGEN)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 96</span>
+            <h3 class="card-title">Allure Homme Sport Cologen)</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Cardamom, Cedar
+                <strong>Middle Notes:</strong> Sandalwood, Vetiver
+                <strong>Base Notes:</strong> Musk, Amber
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ML</span>
@@ -806,9 +1063,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 97</span>
-            <h3 class="card-title">CHANEL ALLURE HOMME (EAU DE TOILETTE)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 97</span>
+            <h3 class="card-title">Allure Homme (Eau De Toilette)</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Cardamom, Cedar
+                <strong>Middle Notes:</strong> Sandalwood, Vetiver
+                <strong>Base Notes:</strong> Musk, Amber
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ML</span>
@@ -818,9 +1079,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 98</span>
-            <h3 class="card-title">CHANEL ALLURE SESUELLE</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 98</span>
+            <h3 class="card-title">Allure Sesuelle</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ML</span>
@@ -830,9 +1095,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 99</span>
-            <h3 class="card-title">CHANEL ALLURE (EAU DE PARFUM)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 99</span>
+            <h3 class="card-title">Allure (Eau De )</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.00</span>
                 <span class="size">100ML</span>
@@ -842,9 +1111,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 23</span>
-            <h3 class="card-title">100   CHANEL NO 5 Eau DE Parfum</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 23</span>
+            <h3 class="card-title">Goddess Aura</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$19.99</span>
                 <span class="size">100ML</span>
@@ -854,9 +1127,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 101</span>
-            <h3 class="card-title">1957   CHANEL 1957CHANL PARIS</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 101</span>
+            <h3 class="card-title">CHANEL 1957CHANL PARIS</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Bergamot, Lemon, Pepper
+                <strong>Middle Notes:</strong> Jasmine, Rose, Patchouli
+                <strong>Base Notes:</strong> Musk, Amber, Sandalwood
+            </div>
             <div class="card-footer">
                 <span class="price">$19.99</span>
                 <span class="size">200ML</span>
@@ -866,9 +1143,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 102</span>
-            <h3 class="card-title">CHANEL Sycomore</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 102</span>
+            <h3 class="card-title">Sycomore</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$19.99</span>
                 <span class="size">200ml</span>
@@ -878,9 +1159,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 103</span>
-            <h3 class="card-title">CHANEL Le Lion de chanel</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 103</span>
+            <h3 class="card-title">Le Lion De</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$19.99</span>
                 <span class="size">200ml</span>
@@ -890,9 +1175,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 104</span>
-            <h3 class="card-title">Chanel Masterpiece No. 104</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Chanel's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 104</span>
+            <h3 class="card-title">Chanel Bloom</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">35ML</span>
@@ -902,9 +1191,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 24</span>
-            <h3 class="card-title">105  5   CHANEL N5 L'EAU</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Gucci's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 24</span>
+            <h3 class="card-title">Mystery</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$17.99</span>
                 <span class="size">50ML</span>
@@ -914,9 +1207,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 106</span>
+            <span class="card-no">ITEM CODE: 106</span>
             <h3 class="card-title">Chanel N1</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Gucci's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Bergamot, Lemon, Pepper
+                <strong>Middle Notes:</strong> Jasmine, Rose, Patchouli
+                <strong>Base Notes:</strong> Musk, Amber, Sandalwood
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ML</span>
@@ -926,9 +1223,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 107</span>
-            <h3 class="card-title">GUCCI BLOOM</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Gucci's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 107</span>
+            <h3 class="card-title">Bloom</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -938,9 +1239,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 108</span>
-            <h3 class="card-title">GUCCI BLOOM</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Gucci's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 108</span>
+            <h3 class="card-title">Bloom</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -950,9 +1255,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 25</span>
-            <h3 class="card-title">109  GUCCI BLOOM</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Gucci's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 25</span>
+            <h3 class="card-title">The 25Th</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -962,9 +1271,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 110</span>
-            <h3 class="card-title">GUCCI Hexagonal</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Gucci's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 110</span>
+            <h3 class="card-title">Hexagonal</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -974,9 +1287,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 111</span>
-            <h3 class="card-title">GUCCI Hexagonal</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Gucci's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 111</span>
+            <h3 class="card-title">Hexagonal</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -986,9 +1303,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 112</span>
-            <h3 class="card-title">GUCCI FLORA</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Gucci's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 112</span>
+            <h3 class="card-title">Flora</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -998,9 +1319,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 113</span>
-            <h3 class="card-title">GUCCI FLORA</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Gucci's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 113</span>
+            <h3 class="card-title">Flora</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -1010,9 +1335,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 26</span>
-            <h3 class="card-title">114  GUCCI FLORA</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Gucci's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 26</span>
+            <h3 class="card-title">Mystery</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -1022,9 +1351,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 115</span>
-            <h3 class="card-title">GUCCI Sin loves man</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Gucci's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 115</span>
+            <h3 class="card-title">Sin Loves Man</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">90ml</span>
@@ -1034,9 +1367,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 116</span>
-            <h3 class="card-title">GUCCI Guilty</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Gucci's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 116</span>
+            <h3 class="card-title">Guilty</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">90ml</span>
@@ -1046,9 +1383,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 117</span>
-            <h3 class="card-title">CUCCI Guilty Eau de Parfum intense Pour Femme</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Gucci's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 117</span>
+            <h3 class="card-title">Cucci Guilty Eau De Pour Femme</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">90ml</span>
@@ -1058,9 +1399,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 118</span>
-            <h3 class="card-title">CUCCI Guilty FemmeEau de Parfum 90 $15.99 119   Gucci Flora Gorgeous Gardenia Limited Edition 50 $15.99 120  GUCCI Bamboo flavor</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Gucci's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 118</span>
+            <h3 class="card-title">CUCCI Guilty FemmeEau de Parfum $. Gucci Flora Gorgeous Gardenia Limited Edition $. GUCCI Bamboo flavor</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Bergamot, Lemon, Pepper
+                <strong>Middle Notes:</strong> Jasmine, Rose, Patchouli
+                <strong>Base Notes:</strong> Musk, Amber, Sandalwood
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">75ml</span>
@@ -1070,9 +1415,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 121</span>
-            <h3 class="card-title">GUCCI Lady love of sin</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Gucci's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 121</span>
+            <h3 class="card-title">Lady Love Of Sin</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">75ml</span>
@@ -1082,9 +1431,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 122</span>
-            <h3 class="card-title">GUCCI BLOOM</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Gucci's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 122</span>
+            <h3 class="card-title">Bloom</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">50ml</span>
@@ -1094,9 +1447,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 123</span>
-            <h3 class="card-title">GUCCI POUR HOMME</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Gucci's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 123</span>
+            <h3 class="card-title">Pour Homme</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Cardamom, Cedar
+                <strong>Middle Notes:</strong> Sandalwood, Vetiver
+                <strong>Base Notes:</strong> Musk, Amber
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">90ml</span>
@@ -1106,9 +1463,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 34</span>
-            <h3 class="card-title">153  TOM FORD LOST CHERRY</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by LV's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 34</span>
+            <h3 class="card-title">Christian La Colle Nore</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">50ml</span>
@@ -1118,9 +1479,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 154</span>
-            <h3 class="card-title">TOM FORD VANILLEFATALE CAU DE PARFUM</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by LV's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 154</span>
+            <h3 class="card-title">Vanillefatale Cau De</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">50ML</span>
@@ -1130,9 +1495,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 155</span>
-            <h3 class="card-title">TOM FORD MYRRHE MYSTRE</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by LV's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 155</span>
+            <h3 class="card-title">Myrrhe Mystre</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -1142,9 +1511,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 156</span>
-            <h3 class="card-title">LOUIS VUITTON SPELL ON YOU</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by LV's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 156</span>
+            <h3 class="card-title">Spell On You</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$34.99</span>
                 <span class="size">100ml</span>
@@ -1154,9 +1527,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 35</span>
-            <h3 class="card-title">157  LOUIS VUITTON IMAGINATION</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by LV's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 35</span>
+            <h3 class="card-title">Homme ()</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Cardamom, Cedar
+                <strong>Middle Notes:</strong> Sandalwood, Vetiver
+                <strong>Base Notes:</strong> Musk, Amber
+            </div>
             <div class="card-footer">
                 <span class="price">$34.99</span>
                 <span class="size">100ml</span>
@@ -1166,9 +1543,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 158</span>
-            <h3 class="card-title">LOUIS YUITTON CITY OF STARS</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by LV's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 158</span>
+            <h3 class="card-title">Louis Yuitton City Of Stars</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$34.99</span>
                 <span class="size">100ml</span>
@@ -1178,9 +1559,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 159</span>
-            <h3 class="card-title">LOUIS VUITTON ON THE BEACH</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by LV's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 159</span>
+            <h3 class="card-title">On The Beach</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$34.99</span>
                 <span class="size">100ml</span>
@@ -1190,9 +1575,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 160</span>
-            <h3 class="card-title">LOUIS VUITTON PACIFIC CHILL</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by LV's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 160</span>
+            <h3 class="card-title">Pacific Chill</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$34.99</span>
                 <span class="size">100ml</span>
@@ -1202,9 +1591,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 161</span>
-            <h3 class="card-title">LOUIS VUITTON Lovers</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by LV's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 161</span>
+            <h3 class="card-title">Lovers</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$34.99</span>
                 <span class="size">100ml</span>
@@ -1214,9 +1607,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 36</span>
-            <h3 class="card-title">162  LOUIS VUITTON L'IMMENSITE</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by LV's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 36</span>
+            <h3 class="card-title">Homme</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Cardamom, Cedar
+                <strong>Middle Notes:</strong> Sandalwood, Vetiver
+                <strong>Base Notes:</strong> Musk, Amber
+            </div>
             <div class="card-footer">
                 <span class="price">$34.99</span>
                 <span class="size">100ml</span>
@@ -1226,9 +1623,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 163</span>
-            <h3 class="card-title">LOUIS VUITTON CALIFORNIA DREAY</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by LV's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 163</span>
+            <h3 class="card-title">California Dreay</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$34.99</span>
                 <span class="size">100ml</span>
@@ -1238,9 +1639,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 164</span>
-            <h3 class="card-title">LOUIS VUITTON NUIT DE FEU</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by LV's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 164</span>
+            <h3 class="card-title">Nuit De Feu</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$34.99</span>
                 <span class="size">100ml</span>
@@ -1250,9 +1655,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 165</span>
-            <h3 class="card-title">/  LOUIS VUITTON OMBRE NOMADE</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by LV's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 165</span>
+            <h3 class="card-title">/ Ombre Nomade</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$34.99</span>
                 <span class="size">100ml</span>
@@ -1262,9 +1671,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 166</span>
-            <h3 class="card-title">LOUIS VUITTON OR AGE</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by LV's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 166</span>
+            <h3 class="card-title">Or Age</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$34.99</span>
                 <span class="size">100ml</span>
@@ -1274,9 +1687,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 37</span>
-            <h3 class="card-title">167  LOUIS VUITTON LE JOUR SE LEVE</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by YSL's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 37</span>
+            <h3 class="card-title">The 37Th</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$34.00</span>
                 <span class="size">100ml</span>
@@ -1286,9 +1703,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 168</span>
-            <h3 class="card-title">YSL-black opium</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by YSL's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 168</span>
+            <h3 class="card-title">Midnight Caffeine</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Pear, Pink Pepper
+                <strong>Middle Notes:</strong> Coffee, Jasmine
+                <strong>Base Notes:</strong> Vanilla, Patchouli
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">90ml</span>
@@ -1298,9 +1719,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 169</span>
-            <h3 class="card-title">YSL-black opium</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by YSL's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 169</span>
+            <h3 class="card-title">Midnight Caffeine</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Pear, Pink Pepper
+                <strong>Middle Notes:</strong> Coffee, Jasmine
+                <strong>Base Notes:</strong> Vanilla, Patchouli
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">50ml</span>
@@ -1310,9 +1735,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 170</span>
-            <h3 class="card-title">YSL Yves Saint Laurent Black Opium Glitter</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by YSL's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 170</span>
+            <h3 class="card-title">Midnight Caffeine</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Pear, Pink Pepper
+                <strong>Middle Notes:</strong> Coffee, Jasmine
+                <strong>Base Notes:</strong> Vanilla, Patchouli
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">90ML</span>
@@ -1322,9 +1751,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 38</span>
-            <h3 class="card-title">171  YSL-red opium</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by YSL's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 38</span>
+            <h3 class="card-title">Hypnotic Poison ()</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">50ml</span>
@@ -1334,9 +1767,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 172</span>
-            <h3 class="card-title">YSL-YESSAINIAURENT LE PARFUM</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by YSL's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 172</span>
+            <h3 class="card-title">Yessainiaurent</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ML</span>
@@ -1346,9 +1783,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 173</span>
-            <h3 class="card-title">YSL Yves Saint Laurent Y Eau de Parfum Intense</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by YSL's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 173</span>
+            <h3 class="card-title">Yves Saint Laurent Y Eau De</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ML</span>
@@ -1358,9 +1799,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 174</span>
-            <h3 class="card-title">YSL Yves Saint Laurent Y Elixir</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by YSL's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 174</span>
+            <h3 class="card-title">Yves Saint Laurent Y</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ML</span>
@@ -1370,9 +1815,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 175</span>
-            <h3 class="card-title">YSL-EAU DE TOILETTE VAPORFSATEUR- MATLRAI SPRA</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by YSL's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 175</span>
+            <h3 class="card-title">Eau De Toilette Vaporfsateur- Matlrai Spra</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ML</span>
@@ -1382,9 +1831,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 39</span>
-            <h3 class="card-title">176  YSL-MON PARIS (EDP)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by YSL's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 39</span>
+            <h3 class="card-title">The 39Th</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">90ml</span>
@@ -1394,9 +1847,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 177</span>
-            <h3 class="card-title">YSL-MON PARIS (EDT)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by YSL's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 177</span>
+            <h3 class="card-title">Mon Paris ()</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">90ml</span>
@@ -1406,9 +1863,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 178</span>
-            <h3 class="card-title">YSL-MON PARIS (EDP)(Purple)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by YSL's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 178</span>
+            <h3 class="card-title">Mon Paris ()(Purple)</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">90ml</span>
@@ -1418,9 +1879,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 179</span>
-            <h3 class="card-title">YSL-Mon Paris Parfum Floral</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by YSL's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 179</span>
+            <h3 class="card-title">Mon Paris Floral</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">90ml</span>
@@ -1430,9 +1895,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 180</span>
-            <h3 class="card-title">YSL-MON PARIS (EDP)</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by YSL's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 180</span>
+            <h3 class="card-title">Mon Paris ()</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">50ml</span>
@@ -1442,9 +1911,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 40</span>
-            <h3 class="card-title">182  YSL-Libre</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by YSL's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 40</span>
+            <h3 class="card-title">Miss Rose Essence</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">90ml</span>
@@ -1454,9 +1927,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 183</span>
-            <h3 class="card-title">YSL-Libre</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by YSL's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 183</span>
+            <h3 class="card-title">Freedom Aura</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Lavender, Mandarin
+                <strong>Middle Notes:</strong> Orange Blossom
+                <strong>Base Notes:</strong> Vanilla, Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">90ml</span>
@@ -1466,9 +1943,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 184</span>
-            <h3 class="card-title">YSL LIBRE EDT</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by YSL's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 184</span>
+            <h3 class="card-title">Freedom Aura</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Lavender, Mandarin
+                <strong>Middle Notes:</strong> Orange Blossom
+                <strong>Base Notes:</strong> Vanilla, Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">90ML</span>
@@ -1478,9 +1959,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 185</span>
-            <h3 class="card-title">YSL-Libre</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by YSL's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 185</span>
+            <h3 class="card-title">Freedom Aura</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Lavender, Mandarin
+                <strong>Middle Notes:</strong> Orange Blossom
+                <strong>Base Notes:</strong> Vanilla, Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$17.99</span>
                 <span class="size">100ml</span>
@@ -1490,9 +1975,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 186</span>
-            <h3 class="card-title">YSL-Libre</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by YSL's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 186</span>
+            <h3 class="card-title">Freedom Aura</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Lavender, Mandarin
+                <strong>Middle Notes:</strong> Orange Blossom
+                <strong>Base Notes:</strong> Vanilla, Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">50ml</span>
@@ -1502,9 +1991,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 44</span>
-            <h3 class="card-title">201  Maison Margiela Flower market</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Hermes's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 44</span>
+            <h3 class="card-title">Hypnotic Poison ()</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -1514,9 +2007,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 202</span>
-            <h3 class="card-title">Maison Margiela Bubble Bath</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Hermes's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 202</span>
+            <h3 class="card-title">Bubble Bath</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -1526,9 +2023,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 203</span>
-            <h3 class="card-title">Maison Margiela A Walk on the beach</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Hermes's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 203</span>
+            <h3 class="card-title">A Walk On The Beach</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -1538,9 +2039,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 204</span>
-            <h3 class="card-title">Maison Margiela The sound of autumn leaves</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Hermes's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 204</span>
+            <h3 class="card-title">The Sound Of Autumn Leaves</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -1550,9 +2055,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 205</span>
-            <h3 class="card-title">Maison Margiela After a little tipsy</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Hermes's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 205</span>
+            <h3 class="card-title">After A Little Tipsy</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -1562,9 +2071,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 45</span>
-            <h3 class="card-title">HERMES 206  Hermes Earth man</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Hermes's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 45</span>
+            <h3 class="card-title">Pure Poison</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -1574,9 +2087,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 207</span>
-            <h3 class="card-title">Hermes Earth man</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Hermes's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 207</span>
+            <h3 class="card-title">Earth Man</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">50ml</span>
@@ -1586,9 +2103,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 208</span>
-            <h3 class="card-title">Hermes Mr. Lee</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Hermes's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 208</span>
+            <h3 class="card-title">Mr. Lee</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -1598,9 +2119,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 209</span>
-            <h3 class="card-title">Hermes The Nile</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Hermes's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 209</span>
+            <h3 class="card-title">The Nile</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -1610,9 +2135,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 46</span>
-            <h3 class="card-title">210  Hermes Roof Garden</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Hermes's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 46</span>
+            <h3 class="card-title">The 46Th</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -1622,9 +2151,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 211</span>
-            <h3 class="card-title">Hermes Eau d'Orange Verte</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Hermes's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 211</span>
+            <h3 class="card-title">Eau D'Orange Verte</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Bergamot, Lemon
+                <strong>Middle Notes:</strong> Green Tea, Jasmine
+                <strong>Base Notes:</strong> White Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$16.99</span>
                 <span class="size">100ml</span>
@@ -1634,9 +2167,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 212</span>
-            <h3 class="card-title">Hermes Rhubarbe Ecarlate</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Hermes's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 212</span>
+            <h3 class="card-title">Carolina Herrera Sexy</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$16.99</span>
                 <span class="size">100ml</span>
@@ -1646,9 +2183,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 213</span>
-            <h3 class="card-title">Hermes Twillyd'Herms</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Hermes's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 213</span>
+            <h3 class="card-title">Twillyd'Herms</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$16.99</span>
                 <span class="size">85ml</span>
@@ -1658,9 +2199,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 214</span>
-            <h3 class="card-title">Hermes Twilly d'Herms Eau Ginger</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Hermes's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 214</span>
+            <h3 class="card-title">Twilly D'Herms Eau Ginger</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$16.99</span>
                 <span class="size">85ml</span>
@@ -1670,9 +2215,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 84</span>
-            <h3 class="card-title">385  Guerlain Sydney smoothie</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Burberry's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 84</span>
+            <h3 class="card-title">Golden Luck</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Lemon, Pineapple
+                <strong>Middle Notes:</strong> Jasmine, Hyacinth
+                <strong>Base Notes:</strong> Musk, Patchouli
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">75ml</span>
@@ -1682,9 +2231,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 386</span>
-            <h3 class="card-title">Guerlain Orange flower rock orchid</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Burberry's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 386</span>
+            <h3 class="card-title">Orange Flower Rock Orchid</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Bergamot, Lemon
+                <strong>Middle Notes:</strong> Green Tea, Jasmine
+                <strong>Base Notes:</strong> White Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">75ml</span>
@@ -1694,9 +2247,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 387</span>
-            <h3 class="card-title">Guerlain Citrus Rorer</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Burberry's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 387</span>
+            <h3 class="card-title">Citrus Rorer</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Bergamot, Lemon
+                <strong>Middle Notes:</strong> Green Tea, Jasmine
+                <strong>Base Notes:</strong> White Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">75ml</span>
@@ -1706,9 +2263,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 388</span>
-            <h3 class="card-title">Guerlain Rose, Rose</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Burberry's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 388</span>
+            <h3 class="card-title">" Rose</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">75ml</span>
@@ -1718,9 +2279,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 389</span>
-            <h3 class="card-title">Guerlain Grapefruit</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Burberry's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 389</span>
+            <h3 class="card-title">Grapefruit</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">75ml</span>
@@ -1730,9 +2295,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 85</span>
-            <h3 class="card-title">390  Guerlain Mint grass</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Prada's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 85</span>
+            <h3 class="card-title">Golden Luck</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Lemon, Pineapple
+                <strong>Middle Notes:</strong> Jasmine, Hyacinth
+                <strong>Base Notes:</strong> Musk, Patchouli
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">75ml</span>
@@ -1742,9 +2311,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 391</span>
-            <h3 class="card-title">BURBERRY Hawthorn flower</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Prada's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 391</span>
+            <h3 class="card-title">Burberry Hawthorn Flower</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$17.99</span>
                 <span class="size">100ml</span>
@@ -1754,9 +2327,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 392</span>
-            <h3 class="card-title">BURBERRY Red Roses</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Prada's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 392</span>
+            <h3 class="card-title">Burberry Red Roses</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$17.99</span>
                 <span class="size">100ml</span>
@@ -1766,9 +2343,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 393</span>
-            <h3 class="card-title">BURBERRY Walking, Winsor</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Prada's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 393</span>
+            <h3 class="card-title">"Burberry Walking</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$17.99</span>
                 <span class="size">100ml</span>
@@ -1778,9 +2359,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 86</span>
-            <h3 class="card-title">394  BURBERRY Manor Tea Party</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Prada's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 86</span>
+            <h3 class="card-title">Azure Depths</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Grapefruit, Lemon
+                <strong>Middle Notes:</strong> Ginger, Jasmine
+                <strong>Base Notes:</strong> Incense, Cedar
+            </div>
             <div class="card-footer">
                 <span class="price">$17.99</span>
                 <span class="size">100ml</span>
@@ -1790,9 +2375,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 395</span>
-            <h3 class="card-title">PRADA Fleur-de-lis</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Prada's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 395</span>
+            <h3 class="card-title">Fleur-De-Lis</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -1802,9 +2391,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 396</span>
-            <h3 class="card-title">PRADA Bath Roses</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Prada's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 396</span>
+            <h3 class="card-title">Bath Roses</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -1814,9 +2407,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 397</span>
-            <h3 class="card-title">PRADA Bitter Orange</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Prada's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 397</span>
+            <h3 class="card-title">Bitter Orange</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Bergamot, Lemon
+                <strong>Middle Notes:</strong> Green Tea, Jasmine
+                <strong>Base Notes:</strong> White Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -1826,9 +2423,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 87</span>
-            <h3 class="card-title">398  PRADA Bitter Apricot Delight</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Valentino's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 87</span>
+            <h3 class="card-title">Azure Depths</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Grapefruit, Lemon
+                <strong>Middle Notes:</strong> Ginger, Jasmine
+                <strong>Base Notes:</strong> Incense, Cedar
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -1838,9 +2439,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 399</span>
-            <h3 class="card-title">PRADA Melted cedar</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Valentino's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 399</span>
+            <h3 class="card-title">Melted Cedar</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Cardamom, Cedar
+                <strong>Middle Notes:</strong> Sandalwood, Vetiver
+                <strong>Base Notes:</strong> Musk, Amber
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -1850,9 +2455,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 400</span>
-            <h3 class="card-title">PRADA I am unpredictable</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Valentino's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 400</span>
+            <h3 class="card-title">I Am Unpredictable</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">90ml</span>
@@ -1862,9 +2471,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 401</span>
-            <h3 class="card-title">PRADA MILANO</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Valentino's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 401</span>
+            <h3 class="card-title">Milano</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">90ML</span>
@@ -1874,9 +2487,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 402</span>
-            <h3 class="card-title">PARADOXE VIRTUAL FLOWER</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Valentino's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 402</span>
+            <h3 class="card-title">Paradoxe Virtual Flower</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">90ML</span>
@@ -1886,9 +2503,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 88</span>
-            <h3 class="card-title">VALENTINO 403  VALENTINO Day Rose</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Valentino's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 88</span>
+            <h3 class="card-title">Azure Depths</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Grapefruit, Lemon
+                <strong>Middle Notes:</strong> Ginger, Jasmine
+                <strong>Base Notes:</strong> Incense, Cedar
+            </div>
             <div class="card-footer">
                 <span class="price">$16.99</span>
                 <span class="size">100ml</span>
@@ -1898,9 +2519,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 404</span>
-            <h3 class="card-title">VALENTINO Miss Punk</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Valentino's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 404</span>
+            <h3 class="card-title">Miss Punk</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$16.99</span>
                 <span class="size">100ml</span>
@@ -1910,9 +2535,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 405</span>
-            <h3 class="card-title">VALENTINO Miss Dang Na</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Valentino's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 405</span>
+            <h3 class="card-title">Miss Dang Na</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$16.99</span>
                 <span class="size">100ml</span>
@@ -1922,9 +2551,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 406</span>
-            <h3 class="card-title">VALENTINO Unmo Intense</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Valentino's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 406</span>
+            <h3 class="card-title">Unmo</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$16.99</span>
                 <span class="size">100ml</span>
@@ -1934,9 +2567,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 89</span>
-            <h3 class="card-title">407  VALENTINO Unmo</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Valentino's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 89</span>
+            <h3 class="card-title">Azure Depths</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Grapefruit, Lemon
+                <strong>Middle Notes:</strong> Ginger, Jasmine
+                <strong>Base Notes:</strong> Incense, Cedar
+            </div>
             <div class="card-footer">
                 <span class="price">$16.99</span>
                 <span class="size">100ml</span>
@@ -1946,9 +2583,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 408</span>
-            <h3 class="card-title">VALENTINO Miss Adventure</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Valentino's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 408</span>
+            <h3 class="card-title">Miss Adventure</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$16.99</span>
                 <span class="size">100ml</span>
@@ -1958,9 +2599,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 409</span>
-            <h3 class="card-title">VALENTINO Mr.Dark Night</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Valentino's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 409</span>
+            <h3 class="card-title">Mr.Dark Night</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$16.99</span>
                 <span class="size">100ml</span>
@@ -1970,9 +2615,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 410</span>
-            <h3 class="card-title">VALENTINO Yellow Dream</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Valentino's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 410</span>
+            <h3 class="card-title">Yellow Dream</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$16.99</span>
                 <span class="size">100ml</span>
@@ -1982,9 +2631,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 411</span>
-            <h3 class="card-title">VALENTINO DONNA BORN IN ROMA CORAL FANTASY</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Valentino's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 411</span>
+            <h3 class="card-title">Donna Born In Roma Coral Fantasy</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$16.99</span>
                 <span class="size">100ml</span>
@@ -1994,9 +2647,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 90</span>
-            <h3 class="card-title">412  VALENTINO Unmo BORN IN ROMA</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Valentino's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 90</span>
+            <h3 class="card-title">Cucci Guilty Femmeeau De $. Flora Gorgeous Gardenia Limited Edition $. Bamboo Flavor</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$16.99</span>
                 <span class="size">100ml</span>
@@ -2006,9 +2663,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 413</span>
-            <h3 class="card-title">VALENTINO Donna Born In Roma Pink PP</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Valentino's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 413</span>
+            <h3 class="card-title">Donna Born In Roma Pink Pp</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$16.99</span>
                 <span class="size">100ml</span>
@@ -2018,9 +2679,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 414</span>
-            <h3 class="card-title">VALENTINO UOMO BORN IN ROMA ROCKSTUD NOIR</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Valentino's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 414</span>
+            <h3 class="card-title">Uomo Born In Roma Rockstud Noir</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$16.99</span>
                 <span class="size">100ml</span>
@@ -2030,9 +2695,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 415</span>
-            <h3 class="card-title">VALENTINO Miss Casual</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Valentino's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 415</span>
+            <h3 class="card-title">Miss Casual</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$16.99</span>
                 <span class="size">100ml</span>
@@ -2042,9 +2711,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 416</span>
-            <h3 class="card-title">VALENTINO Mr.Indulgent</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Valentino's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 416</span>
+            <h3 class="card-title">Mr.Indulgent</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$16.99</span>
                 <span class="size">100ml</span>
@@ -2054,9 +2727,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 101</span>
-            <h3 class="card-title">Chlo 460 --  Chlo Cedrus</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Celine's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 101</span>
+            <h3 class="card-title">Chlo -- Chlo Cedrus</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Bergamot, Lemon, Pepper
+                <strong>Middle Notes:</strong> Jasmine, Rose, Patchouli
+                <strong>Base Notes:</strong> Musk, Amber, Sandalwood
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">150ML</span>
@@ -2066,9 +2743,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 461</span>
-            <h3 class="card-title">--  Chlo Magnolia Alba</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Celine's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 461</span>
+            <h3 class="card-title">Magnolia Alba</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">150ML</span>
@@ -2078,9 +2759,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 462</span>
-            <h3 class="card-title">L'EAU DE RSEFUM INTENSE</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Celine's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 462</span>
+            <h3 class="card-title">L'Eau De Rsefum</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ML</span>
@@ -2090,9 +2775,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 463</span>
-            <h3 class="card-title">Chlo EAU DE PARFUMNATURAL SPRAY VAPORISATEUR</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by Celine's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 463</span>
+            <h3 class="card-title">Eau De Natural Spray Vaporisateur</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">50ml</span>

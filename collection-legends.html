@@ -17,8 +17,9 @@
         .card:hover { border-color: var(--gold); transform: translateY(-10px); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
         .card-content { padding: 30px; }
         .card-no { font-size: 0.8rem; color: var(--gold); letter-spacing: 3px; font-weight: bold; }
-        .card-title { font-size: 1.5rem; margin: 15px 0; color: var(--white); font-weight: 400; line-height: 1.2; }
-        .card-desc { font-size: 0.95rem; color: var(--gray); margin-bottom: 25px; min-height: 70px; line-height: 1.6; }
+        .card-title { font-size: 1.5rem; margin: 15px 0; color: var(--white); font-weight: 400; line-height: 1.2; text-transform: uppercase; }
+        .card-notes { font-size: 0.85rem; color: var(--gray); margin-bottom: 25px; min-height: 80px; line-height: 1.8; border-top: 1px solid #222; padding-top: 15px; }
+        .card-notes strong { color: var(--gold); display: block; margin-top: 5px; }
         .card-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #222; padding-top: 25px; }
         .price { color: var(--gold); font-size: 1.3rem; font-weight: bold; }
         .size { color: var(--gray); font-size: 0.9rem; }
@@ -38,9 +39,13 @@
 <div class="grid">
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 2</span>
-            <h3 class="card-title">CREED Silver Spring</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 2</span>
+            <h3 class="card-title">CREED Heritage Blend</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -50,9 +55,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 3</span>
-            <h3 class="card-title">3   CREED The water of success</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 3</span>
+            <h3 class="card-title">The Water Of Success</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Bergamot, Lemon
+                <strong>Middle Notes:</strong> Green Tea, Jasmine
+                <strong>Base Notes:</strong> White Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$19.99</span>
                 <span class="size">75ml</span>
@@ -62,9 +71,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 4</span>
-            <h3 class="card-title">CREED Aventus Cologne</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 4</span>
+            <h3 class="card-title">Successor's Legend</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Pineapple, Apple, Bergamot
+                <strong>Middle Notes:</strong> Birch, Patchouli, Jasmine
+                <strong>Base Notes:</strong> Musk, Oakmoss, Ambergris
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -74,9 +87,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 5</span>
-            <h3 class="card-title">CREED LOVE IN WHITE</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 5</span>
+            <h3 class="card-title">Chanel N5</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">75ml</span>
@@ -86,9 +103,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 6</span>
-            <h3 class="card-title">CREED HIMALAYA</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 6</span>
+            <h3 class="card-title">Glacier Peak</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Grapefruit, Lemon
+                <strong>Middle Notes:</strong> Gunpowder, Juniper
+                <strong>Base Notes:</strong> Sandalwood, Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -98,9 +119,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 7</span>
-            <h3 class="card-title">CREED Millesime 1849</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 7</span>
+            <h3 class="card-title">CREED Millesime</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Bergamot, Lemon, Pepper
+                <strong>Middle Notes:</strong> Jasmine, Rose, Patchouli
+                <strong>Base Notes:</strong> Musk, Amber, Sandalwood
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -110,9 +135,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 4</span>
-            <h3 class="card-title">8   CREED CARMINA</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 4</span>
+            <h3 class="card-title">Successor's Legend</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Pineapple, Apple, Bergamot
+                <strong>Middle Notes:</strong> Birch, Patchouli, Jasmine
+                <strong>Base Notes:</strong> Musk, Oakmoss, Ambergris
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -122,9 +151,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 9</span>
-            <h3 class="card-title">CREED Aventus for Her</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 9</span>
+            <h3 class="card-title">Successor's Legend</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Pineapple, Apple, Bergamot
+                <strong>Middle Notes:</strong> Birch, Patchouli, Jasmine
+                <strong>Base Notes:</strong> Musk, Oakmoss, Ambergris
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -134,9 +167,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 10</span>
-            <h3 class="card-title">CREED QUEEN OF SILK</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 10</span>
+            <h3 class="card-title">The 10Th</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -146,9 +183,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 11</span>
-            <h3 class="card-title">CREED The flower of the wind</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 11</span>
+            <h3 class="card-title">The Flower Of The Wind</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">75ml</span>
@@ -158,9 +199,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 12</span>
-            <h3 class="card-title">CREED Spring Flower</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 12</span>
+            <h3 class="card-title">Spring Flower</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">100ml</span>
@@ -170,9 +215,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 5</span>
-            <h3 class="card-title">13   CREED Royal Princess Oud</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 5</span>
+            <h3 class="card-title">Chanel N5</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">75ML</span>
@@ -182,9 +231,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 14</span>
-            <h3 class="card-title">CREED Fragaria</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 14</span>
+            <h3 class="card-title">Fragaria</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">75ML</span>
@@ -194,9 +247,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 15</span>
-            <h3 class="card-title">CREED Love in Black</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 15</span>
+            <h3 class="card-title">Love In Black</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">75ML</span>
@@ -206,9 +263,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 16</span>
-            <h3 class="card-title">CREED Acqua Fiorentina</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 16</span>
+            <h3 class="card-title">Acqua Fiorentina</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">75ML</span>
@@ -218,9 +279,13 @@
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-no">NO. 17</span>
-            <h3 class="card-title">CREED Fleu rissimo</h3>
-            <p class="card-desc">Exquisite 1:1 interpretation inspired by CREED's iconic olfactory profile. Masterfully blended with 96% parity using original formulation benchmarks.</p>
+            <span class="card-no">ITEM CODE: 17</span>
+            <h3 class="card-title">Fleu Rissimo</h3>
+            <div class="card-notes">
+                <strong>Top Notes:</strong> Rose, Jasmine, Peony
+                <strong>Middle Notes:</strong> Lily-of-the-Valley
+                <strong>Base Notes:</strong> Musk
+            </div>
             <div class="card-footer">
                 <span class="price">$15.99</span>
                 <span class="size">75ml</span>
