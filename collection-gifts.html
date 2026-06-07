@@ -27,6 +27,39 @@
         .card-seo-tags strong { color: var(--gold); }
         .btn { display: block; text-align: center; padding: 12px; border: 1px solid var(--gold); color: var(--gold); text-decoration: none; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; margin-top: auto; transition: 0.3s; }
         .btn:hover { background: var(--gold); color: #000; }
+        
+        /* B2B Customization Gallery Styles */
+        .b2b-gallery-section { padding: 80px 5%; border-top: 1px solid #222; background-color: #050505; }
+        .b2b-title { font-size: 2.5rem; color: var(--gold); text-align: center; margin: 0 0 10px 0; font-weight: 300; letter-spacing: 5px; text-transform: uppercase; }
+        .b2b-subtitle { max-width: 800px; margin: 0 auto 60px auto; text-align: center; color: var(--gray); font-style: italic; font-size: 1.1rem; line-height: 1.6; }
+        .b2b-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; margin-bottom: 50px; }
+        @media (max-width: 900px) { .b2b-grid { grid-template-columns: 1fr; } }
+        .b2b-card { background: #111; border: 1px solid #222; border-radius: 4px; overflow: hidden; display: flex; flex-direction: column; transition: 0.4s; }
+        .b2b-card:hover { border-color: var(--gold); }
+        .b2b-card-header { padding: 25px 25px 15px 25px; border-bottom: 1px solid #1a1a1a; }
+        .b2b-pillar-no { font-size: 0.75rem; color: var(--gold); letter-spacing: 2px; font-weight: bold; text-transform: uppercase; margin-bottom: 5px; }
+        .b2b-pillar-title { font-size: 1.4rem; color: var(--white); text-transform: uppercase; letter-spacing: 1px; margin: 0; }
+        .b2b-card-body { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .b2b-pillar-desc { font-size: 0.95rem; color: var(--gray); line-height: 1.6; margin: 0 0 25px 0; }
+        .b2b-img-single { width: 100%; height: 350px; overflow: hidden; border-radius: 4px; border: 1px solid #222; }
+        .b2b-img-single img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+        .b2b-img-single img:hover { transform: scale(1.03); }
+        
+        /* Specific layout for Pillar I Multi-image */
+        .b2b-img-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; height: 350px; }
+        .b2b-img-grid-item { position: relative; width: 100%; height: 100%; overflow: hidden; border-radius: 2px; border: 1px solid #222; }
+        .b2b-img-grid-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+        .b2b-img-grid-item img:hover { transform: scale(1.05); }
+        .b2b-img-grid-item .caption { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.75); color: var(--gold); padding: 5px; font-size: 0.7rem; text-align: center; letter-spacing: 1px; text-transform: uppercase; opacity: 0; transition: 0.3s; }
+        .b2b-img-grid-item:hover .caption { opacity: 1; }
+        
+        /* B2B Call to Action Block */
+        .b2b-cta-block { background: linear-gradient(135deg, #111 0%, #000 100%); border: 1px solid var(--gold); padding: 50px 30px; text-align: center; margin-top: 60px; border-radius: 4px; position: relative; overflow: hidden; }
+        .b2b-cta-title { font-size: 1.8rem; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; margin: 0 0 15px 0; }
+        .b2b-cta-desc { font-size: 1rem; color: var(--white); max-width: 600px; margin: 0 auto 30px auto; line-height: 1.6; }
+        .b2b-cta-btn { display: inline-block; padding: 15px 40px; background: var(--gold); color: #000; border: 1px solid var(--gold); font-size: 0.9rem; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; transition: 0.3s; border-radius: 2px; }
+        .b2b-cta-btn:hover { background: transparent; color: var(--gold); }
+
         footer { text-align: center; padding: 40px; border-top: 1px solid #222; color: #444; font-size: 0.8rem; }
     </style>
 </head>
@@ -259,6 +292,93 @@
         </div>
 
     </div>
+
+    <!-- Section: B2B CUSTOMIZATION GALLERY -->
+    <section class="b2b-gallery-section">
+        <h2 class="b2b-title">B2B Customization Gallery</h2>
+        <p class="b2b-subtitle">Providing full-service packaging, accessory curation, and craft finishing solutions for global distributors.</p>
+        
+        <div class="b2b-grid">
+            <!-- Pillar I: High-End Box Styles & Unboxing -->
+            <div class="b2b-card">
+                <div class="b2b-card-header">
+                    <div class="b2b-pillar-no">Pillar I</div>
+                    <h3 class="b2b-pillar-title">High-End Box Styles & Unboxing</h3>
+                </div>
+                <div class="b2b-card-body">
+                    <p class="b2b-pillar-desc">Perfect unboxing experiences with custom silk linings, ribbons, pop-up structures, and seasonal designs tailored for festive or corporate gifting.</p>
+                    <div class="b2b-img-grid">
+                        <div class="b2b-img-grid-item">
+                            <img src="https://sc01.alicdn.com/kf/H2836f617b00a46cda51f60e138e8cb70H.jpg" alt="Gradient Luxury Ribbon Boxes">
+                            <div class="caption">Ribbon Gifting</div>
+                        </div>
+                        <div class="b2b-img-grid-item">
+                            <img src="https://sc01.alicdn.com/kf/Hea7f414909594ee78848d549d050ebcaL.jpg" alt="3D Pop-Up Cake Birthday Boxes">
+                            <div class="caption">3D Birthday Pop-Up</div>
+                        </div>
+                        <div class="b2b-img-grid-item">
+                            <img src="https://sc01.alicdn.com/kf/Hbbc5274cb1b04de394531181a2fa107aW.jpg" alt="Pastel Floral Boxes with Silk Scarves">
+                            <div class="caption">Floral & Scarf</div>
+                        </div>
+                        <div class="b2b-img-grid-item">
+                            <img src="https://sc01.alicdn.com/kf/H3910a3fa85644954b74fac3253413dcbA.jpg" alt="Satin Lining Details">
+                            <div class="caption">Satin Lining</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pillar II: Brand Accessory Curation -->
+            <div class="b2b-card">
+                <div class="b2b-card-header">
+                    <div class="b2b-pillar-no">Pillar II</div>
+                    <h3 class="b2b-pillar-title">Brand Accessory Curation</h3>
+                </div>
+                <div class="b2b-card-body">
+                    <p class="b2b-pillar-desc">All-in-one beauty and lifestyle curation. We combine signature fragrances with custom luxury mirrors, eye masks, makeup brushes, and jade rollers to build bespoke gift sets.</p>
+                    <div class="b2b-img-single">
+                        <img src="https://sc01.alicdn.com/kf/H098848cad3b94eb7bb5696ca10eda2e56.jpg" alt="Lifestyle Accessory Curation">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pillar III: Advanced Craft Finishing -->
+            <div class="b2b-card">
+                <div class="b2b-card-header">
+                    <div class="b2b-pillar-no">Pillar III</div>
+                    <h3 class="b2b-pillar-title">Advanced Craft Finishing</h3>
+                </div>
+                <div class="b2b-card-body">
+                    <p class="b2b-pillar-desc">Elevate your packaging with exquisite surface finishes. We offer premium Gold Hot Stamping, Holographic Laser coatings, Spot UV, and high-fidelity embossing/debossing.</p>
+                    <div class="b2b-img-single">
+                        <img src="https://sc01.alicdn.com/kf/Ha777ee574c724e9b96d39b515dcd770bX.jpg" alt="Advanced Craft Finishing">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pillar IV: Packaging Material Solutions -->
+            <div class="b2b-card">
+                <div class="b2b-card-header">
+                    <div class="b2b-pillar-no">Pillar IV</div>
+                    <h3 class="b2b-pillar-title">Packaging Material Solutions</h3>
+                </div>
+                <div class="b2b-card-body">
+                    <p class="b2b-pillar-desc">Flexible materials customized to your target margins. Choose from heavy paper boxes, luxury tin/iron vaults, plastic transparent shields, and reusable drawstring fabric pouches.</p>
+                    <div class="b2b-img-single">
+                        <img src="https://sc01.alicdn.com/kf/H43783ac42ac344d99b45dd5d5d43a11a3.jpg" alt="Packaging Materials Overview">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- B2B Wholesale Call to Action -->
+        <div class="b2b-cta-block">
+            <h3 class="b2b-cta-title">Start Your Custom Fragrance Project</h3>
+            <p class="b2b-cta-desc">Whether you need custom-shaped boxes, unique cross-border beauty accessories, or custom replica formulation, our engineering team is here to bring your vision to life. WhatsApp us today for catalog and wholesale pricing sheets.</p>
+            <a href="https://wa.me/8618859725858?text=Hello, I would like to inquire about B2B custom fragrance packaging and gift sets." class="b2b-cta-btn" target="_blank">Contact Wholesale Desk</a>
+        </div>
+    </section>
+
     <footer>&copy; 2026 Hyscent Official. All Rights Reserved.</footer>
 </body>
 </html>
