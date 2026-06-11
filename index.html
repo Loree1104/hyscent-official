@@ -24,6 +24,9 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://hcyscents.com/">
 
+    <!-- Langston & Keene Inspired Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,200;6..72,300;6..72,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
@@ -65,69 +68,68 @@
     <style>
         :root {
             --gold: #D4AF37;
-            --black: #0A0A0A;
-            --dark-grey: #121212;
-            --white: #F5F5F5;
-            --light-grey: #888;
-            --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            --black: #121B22; /* Midnight Charcoal */
+            --dark-grey: #0F161C;
+            --white: #F9F9F9; /* Off-white */
+            --light-grey: #A0A0A0;
+            --transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Playfair Display', serif; scroll-behavior: smooth; }
-        body { background-color: var(--black); color: var(--white); line-height: 1.8; -webkit-font-smoothing: antialiased; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        body { background-color: var(--black); color: var(--white); line-height: 1.6; -webkit-font-smoothing: antialiased; }
         
-        /* Navigation Optimization */
-        header { padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(212, 175, 55, 0.1); position: sticky; top: 0; background: rgba(10, 10, 10, 0.95); backdrop-filter: blur(10px); z-index: 1000; }
-        .logo img { height: 45px; transition: var(--transition); }
-        .logo img:hover { transform: scale(1.05); }
+        h1, h2, h3, .logo-text { font-family: 'Newsreader', serif; font-weight: 200; }
         
-        nav a { color: var(--white); text-decoration: none; margin-left: 35px; font-size: 0.75rem; letter-spacing: 3px; text-transform: uppercase; transition: var(--transition); opacity: 0.8; }
+        header { padding: 30px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255, 255, 255, 0.05); position: sticky; top: 0; background: rgba(18, 27, 34, 0.98); backdrop-filter: blur(10px); z-index: 1000; }
+        .logo img { height: 35px; transition: var(--transition); opacity: 0.9; }
+        
+        nav a { color: var(--white); text-decoration: none; margin-left: 40px; font-size: 0.7rem; letter-spacing: 4px; text-transform: uppercase; transition: var(--transition); opacity: 0.7; font-weight: 300; }
         nav a:hover { color: var(--gold); opacity: 1; }
         
-        .mobile-menu-btn { display: none; color: var(--gold); font-size: 1.5rem; cursor: pointer; }
+        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(rgba(18,27,34,0.6), rgba(18,27,34,0.6)), url('https://sc01.alicdn.com/kf/Ac3c752ec893f4de694b6ea0e36ff1ccdd.jpg') center/cover; padding: 0 10%; }
+        .hero h1 { font-size: clamp(3rem, 10vw, 5.5rem); margin-bottom: 30px; color: var(--white); letter-spacing: 12px; font-weight: 200; text-transform: uppercase; }
+        .hero p { font-size: 1rem; max-width: 600px; margin-bottom: 60px; color: rgba(255,255,255,0.7); letter-spacing: 2px; font-weight: 300; }
+        
+        .btn { padding: 15px 40px; border: 1px solid var(--white); color: var(--white); text-decoration: none; transition: var(--transition); text-transform: uppercase; letter-spacing: 3px; font-size: 0.75rem; display: inline-block; border-radius: 0; }
+        .btn:hover { background: var(--white); color: var(--black); }
 
-        /* Hero Refinement */
-        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://sc01.alicdn.com/kf/Ac3c752ec893f4de694b6ea0e36ff1ccdd.jpg') center/cover; padding: 0 10%; }
-        .hero h1 { font-size: clamp(3rem, 10vw, 6rem); margin-bottom: 25px; color: var(--gold); letter-spacing: 15px; font-weight: 700; text-shadow: 0 5px 15px rgba(0,0,0,0.5); }
-        .hero p { font-size: 1.1rem; max-width: 700px; margin-bottom: 50px; color: #ccc; letter-spacing: 1.5px; font-style: italic; }
+        section { padding: 140px 10%; }
+        .section-title { text-align: center; font-size: clamp(2rem, 5vw, 2.8rem); margin-bottom: 15px; color: var(--white); text-transform: uppercase; letter-spacing: 10px; font-weight: 200; }
+        .section-subtitle { text-align: center; color: var(--light-grey); margin-bottom: 100px; letter-spacing: 4px; font-size: 0.9rem; text-transform: uppercase; font-weight: 300; }
         
-        .btn { padding: 18px 45px; border: 1px solid var(--gold); color: var(--gold); text-decoration: none; transition: var(--transition); text-transform: uppercase; letter-spacing: 3px; font-size: 0.85rem; display: inline-block; position: relative; overflow: hidden; }
-        .btn:hover { background: var(--gold); color: var(--black); box-shadow: 0 0 20px rgba(212, 175, 55, 0.3); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 60px; }
 
-        /* Product Cards Enhancement */
-        section { padding: 120px 8%; }
-        .section-title { text-align: center; font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 15px; color: var(--gold); text-transform: uppercase; letter-spacing: 8px; }
-        .section-subtitle { text-align: center; color: var(--light-grey); margin-bottom: 80px; font-style: italic; letter-spacing: 3px; font-size: 1.1rem; }
+        .card { background: transparent; border: none; overflow: hidden; transition: var(--transition); border-radius: 0; }
+        .card:hover { transform: translateY(-10px); }
+        .card-img-container { position: relative; width: 100%; padding-bottom: 125%; background: var(--dark-grey); overflow: hidden; }
+        .card img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: var(--transition); opacity: 0.9; }
+        .card:hover img { transform: scale(1.05); opacity: 1; }
         
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; }
-        .card { background: var(--dark-grey); border: 1px solid #1a1a1a; padding: 0; transition: var(--transition); overflow: hidden; display: flex; flex-direction: column; position: relative; }
-        .card:hover { border-color: var(--gold); transform: translateY(-15px); box-shadow: 0 20px 40px rgba(0,0,0,0.6); }
-        
-        .card-img-container { width: 100%; aspect-ratio: 3/4; overflow: hidden; position: relative; }
-        .card img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1); }
-        .card:hover img { transform: scale(1.08); }
-        
-        .card-content { padding: 35px; flex-grow: 1; display: flex; flex-direction: column; text-align: center; }
-        .card h3 { color: var(--gold); margin-bottom: 12px; font-size: 1.6rem; letter-spacing: 2px; }
-        .card .slogan { color: #888; font-size: 0.8rem; font-weight: 400; margin-bottom: 18px; letter-spacing: 2px; text-transform: uppercase; }
-        .card .desc { font-size: 0.95rem; color: #aaa; margin-bottom: 25px; line-height: 1.7; }
-        .card .price { margin-top: auto; font-size: 1.3rem; color: var(--white); font-weight: 400; border-top: 1px solid #222; padding-top: 20px; }
-        
-        .order-now { margin-top: 20px; color: var(--gold); text-decoration: none; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; border-bottom: 1px solid var(--gold); display: inline-block; transition: 0.3s; padding-bottom: 2px; }
-        .order-now:hover { opacity: 0.7; letter-spacing: 3px; }
+        .card-content { padding: 30px 0; background: transparent; }
+        .card h3 { font-size: 1.4rem; color: var(--white); letter-spacing: 2px; margin-bottom: 10px; text-transform: uppercase; }
+        .card .slogan { color: var(--gold); font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; display: block; margin-bottom: 15px; font-weight: bold; }
+        .card .desc { font-size: 0.9rem; color: var(--light-grey); line-height: 1.8; margin-bottom: 25px; font-weight: 300; }
+        .card .price { font-size: 1rem; color: var(--white); font-weight: 400; margin-bottom: 25px; letter-spacing: 1px; }
 
-        /* Scroll Reveal Animation */
-        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .order-now { color: var(--white); text-decoration: none; text-transform: uppercase; letter-spacing: 3px; font-size: 0.7rem; border-bottom: 1px solid var(--white); padding-bottom: 5px; transition: var(--transition); display: inline-block; }
+        .order-now:hover { color: var(--gold); border-color: var(--gold); }
+
+        /* Split Section Design */
+        .split-section { display: flex; min-height: 700px; padding: 0 !important; overflow: hidden; }
+        .split-content { width: 50%; padding: 80px 8%; display: flex; flex-direction: column; justify-content: center; background: var(--black); }
+        .split-content.alt { background: #0F161C; }
+        .split-visual { width: 50%; background-size: cover; background-position: center; filter: grayscale(20%); transition: 0.8s; }
+        .split-section:hover .split-visual { transform: scale(1.02); filter: grayscale(0%); }
+        @media (max-width: 900px) { .split-section { flex-direction: column; } .split-content, .split-visual { width: 100%; min-height: 400px; } }
+
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
         .reveal.active { opacity: 1; transform: translateY(0); }
 
-        @media (max-width: 1024px) { section { padding: 80px 5%; } .grid { gap: 30px; } }
-        @media (max-width: 768px) { 
-            .hero h1 { font-size: 2.8rem; letter-spacing: 8px; } 
-            nav { display: none; } 
-            .mobile-menu-btn { display: block; }
-            .section-title { font-size: 2.2rem; letter-spacing: 4px; }
-            .section-subtitle { margin-bottom: 50px; }
-        }
+        .trust-badges { display: flex; justify-content: space-around; padding: 60px 10%; background: #0F161C; border-top: 1px solid rgba(255,255,255,0.03); }
+        .badge-item { text-align: center; opacity: 0.6; transition: 0.4s; }
+        .badge-item:hover { opacity: 1; }
+        .badge-item i { font-size: 1.5rem; color: var(--gold); margin-bottom: 15px; display: block; }
+        .badge-item span { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 300; }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -153,11 +155,11 @@
     <div style="position: absolute; top: 20px; right: 5%; color: var(--gold); font-size: 2rem; cursor: pointer;" onclick="toggleMenu()">
         <i class="fas fa-times"></i>
     </div>
-    <a href="#wild" onclick="toggleMenu()" style="color: var(--white); font-size: 1.5rem; text-decoration: none; margin: 20px; letter-spacing: 5px; text-transform: uppercase;">Collections</a>
-    <a href="collection-gifts.html" onclick="toggleMenu()" style="color: var(--white); font-size: 1.5rem; text-decoration: none; margin: 20px; letter-spacing: 5px; text-transform: uppercase;">Gift Sets</a>
-    <a href="#journal" onclick="toggleMenu()" style="color: var(--white); font-size: 1.5rem; text-decoration: none; margin: 20px; letter-spacing: 5px; text-transform: uppercase;">Scent Journal</a>
-    <a href="#custom-gifts" onclick="toggleMenu()" style="color: var(--white); font-size: 1.5rem; text-decoration: none; margin: 20px; letter-spacing: 5px; text-transform: uppercase;">Custom Gifts</a>
-    <a href="#contact" onclick="toggleMenu()" style="color: var(--white); font-size: 1.5rem; text-decoration: none; margin: 20px; letter-spacing: 5px; text-transform: uppercase;">Our Story</a>
+    <a href="#wild" onclick="toggleMenu()" style="color: var(--white); font-family: 'Newsreader', serif; font-weight: 200; font-size: 1.5rem; text-decoration: none; margin: 20px; letter-spacing: 5px; text-transform: uppercase;">Collections</a>
+    <a href="collection-gifts.html" onclick="toggleMenu()" style="color: var(--white); font-family: 'Newsreader', serif; font-weight: 200; font-size: 1.5rem; text-decoration: none; margin: 20px; letter-spacing: 5px; text-transform: uppercase;">Gift Sets</a>
+    <a href="#journal" onclick="toggleMenu()" style="color: var(--white); font-family: 'Newsreader', serif; font-weight: 200; font-size: 1.5rem; text-decoration: none; margin: 20px; letter-spacing: 5px; text-transform: uppercase;">Scent Journal</a>
+    <a href="#custom-gifts" onclick="toggleMenu()" style="color: var(--white); font-family: 'Newsreader', serif; font-weight: 200; font-size: 1.5rem; text-decoration: none; margin: 20px; letter-spacing: 5px; text-transform: uppercase;">Custom Gifts</a>
+    <a href="#contact" onclick="toggleMenu()" style="color: var(--white); font-family: 'Newsreader', serif; font-weight: 200; font-size: 1.5rem; text-decoration: none; margin: 20px; letter-spacing: 5px; text-transform: uppercase;">Our Story</a>
 </div>
 
 <section class="hero reveal">
@@ -341,31 +343,28 @@
 </section>
 
 <!-- Section: CUSTOM GIFTS & COLLECTIBLES -->
-<section id="custom-gifts" class="reveal">
-    <h2 class="section-title">Custom Gifts & Collectibles</h2>
-    <p class="section-subtitle">Personalized Tarot Cards & Bespoke Perfume Sets</p>
-    <div class="grid">
-        <div class="card">
-            <div class="card-img-container"><img src="https://sc02.alicdn.com/kf/Ae2c13aa6f0bf4b5ea110901e98caa313G.png" alt="Custom Tarot Cards"></div>
-            <div class="card-content">
-                <h3>Custom Tarot Cards</h3>
-                <p class="slogan">Your Destiny, Your Design</p>
-                <p class="desc">High-quality custom printed Tarot decks. Personalized artwork and premium cardstock for professional readers and collectors.</p>
-                <div class="price">Wholesale Available</div>
-                <a href="https://wa.me/8618859725858?text=Hello, I am interested in custom tarot cards." class="order-now" target="_blank">Inquire Now</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-img-container"><img src="https://sc01.alicdn.com/kf/H3623136582094ee181d8d0e539b0b576l.jpg" alt="Perfume Gift Box"></div>
-            <div class="card-content">
-                <h3>Bespoke Perfume Sets</h3>
-                <p class="slogan">Luxury Gift Experience</p>
-                <p class="desc">Customized luxury gift cases and presentation vaults. Perfect for unboxing trends, holiday gifting, and premium brand curation.</p>
-                <div class="price">Wholesale Curation</div>
-                <a href="collection-gifts.html" class="order-now">View Collection</a>
-            </div>
+<section id="custom-gifts" class="split-section reveal">
+    <div class="split-content">
+        <span class="slogan" style="color: var(--gold); font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 20px; display: block;">Bespoke Design</span>
+        <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">Custom Tarot Cards</h2>
+        <p class="desc" style="color: var(--light-grey); margin-bottom: 40px; font-weight: 300;">Your Destiny, Your Design. We provide high-quality custom printed Tarot decks with personalized artwork and premium cardstock for professional readers and global collectors.</p>
+        <div>
+            <a href="https://wa.me/8618859725858?text=Hello, I am interested in custom tarot cards." class="order-now" target="_blank">Inquire Now</a>
         </div>
     </div>
+    <div class="split-visual" style="background-image: url('https://sc02.alicdn.com/kf/Ae2c13aa6f0bf4b5ea110901e98caa313G.png');"></div>
+</section>
+
+<section class="split-section reveal" style="flex-direction: row-reverse;">
+    <div class="split-content alt">
+        <span class="slogan" style="color: var(--gold); font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 20px; display: block;">Luxury Curation</span>
+        <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">Bespoke Perfume Sets</h2>
+        <p class="desc" style="color: var(--light-grey); margin-bottom: 40px; font-weight: 300;">Customized luxury gift cases and presentation vaults. Perfect for unboxing trends, holiday gifting, and premium brand curation with global shipping.</p>
+        <div>
+            <a href="collection-gifts.html" class="order-now">View Collection</a>
+        </div>
+    </div>
+    <div class="split-visual" style="background-image: url('https://sc01.alicdn.com/kf/H3623136582094ee181d8d0e539b0b576l.jpg');"></div>
 </section>
 
 <!-- Section: SCENT JOURNAL (BLOG) -->

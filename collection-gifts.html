@@ -4,63 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bespoke Gift Sets | Hyscent Official</title>
+    <!-- Langston & Keene Inspired Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,200;6..72,300;6..72,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <style>
-        :root { --gold: #D4AF37; --black: #0A0A0A; --white: #F5F5F5; --gray: #888; }
-        body { background: var(--black); color: var(--white); font-family: 'Times New Roman', serif; margin: 0; }
-        header { padding: 20px 5%; text-align: center; border-bottom: 1px solid #222; }
-        .logo { font-size: 1.5rem; letter-spacing: 5px; color: var(--gold); text-decoration: none; text-transform: uppercase; }
-        .hero { padding: 100px 5%; text-align: center; background: #000; border-bottom: 1px solid var(--gold); }
-        .hero h1 { font-size: 3rem; color: var(--gold); margin-bottom: 10px; font-weight: 300; letter-spacing: 5px; }
-        .hero p { max-width: 800px; margin: 0 auto; color: var(--gray); font-style: italic; font-size: 1.1rem; line-height: 1.6; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; padding: 60px 5%; }
-        .card { background: #111; border: 1px solid #222; overflow: hidden; transition: 0.4s; display: flex; flex-direction: column; }
-        .card:hover { border-color: var(--gold); transform: translateY(-5px); }
-        .card-img { width: 100%; aspect-ratio: 1; overflow: hidden; position: relative; }
-        .card-img img { width: 100%; height: 100%; object-fit: cover; }
-        .badge { position: absolute; top: 15px; right: 15px; background: var(--gold); color: #000; padding: 5px 15px; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; font-weight: bold; }
-        .card-content { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
-        .card-no { font-size: 0.75rem; color: var(--gold); letter-spacing: 2px; font-weight: bold; text-transform: uppercase; }
-        .card-title { font-size: 1.3rem; margin: 10px 0; color: var(--white); text-transform: uppercase; letter-spacing: 1px; }
-        .card-slogan { font-size: 0.85rem; color: var(--gold); font-style: italic; margin-bottom: 15px; letter-spacing: 1px; }
-        .card-desc { font-size: 0.9rem; color: var(--gray); line-height: 1.6; margin-bottom: 20px; }
-        .card-seo-tags { font-size: 0.75rem; color: #555; border-top: 1px solid #222; padding-top: 15px; margin-top: 15px; line-height: 1.4; }
+        :root {
+            --gold: #D4AF37;
+            --black: #121B22; /* Midnight Charcoal */
+            --white: #F9F9F9; /* Off-white */
+            --gray: #A0A0A0;
+            --transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        * { box-sizing: border-box; }
+        body { background: var(--black); color: var(--white); font-family: 'Inter', sans-serif; margin: 0; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+        h1, h2, h3, .logo { font-family: 'Newsreader', serif; font-weight: 200; }
+        header { padding: 40px 5%; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .logo { font-size: 1.5rem; letter-spacing: 5px; color: var(--white); text-decoration: none; text-transform: uppercase; transition: var(--transition); }
+        .logo:hover { color: var(--gold); }
+        .hero { padding: 120px 5%; text-align: center; background: var(--black); }
+        .hero h1 { font-size: 3.5rem; color: var(--white); margin-bottom: 20px; letter-spacing: 10px; text-transform: uppercase; }
+        .hero p { max-width: 700px; margin: 0 auto; color: var(--gray); font-size: 1rem; line-height: 1.8; font-weight: 300; letter-spacing: 1px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 60px; padding: 80px 10%; }
+        .card { background: transparent; border: none; overflow: hidden; transition: var(--transition); display: flex; flex-direction: column; }
+        .card:hover { transform: translateY(-10px); }
+        .card-img { width: 100%; aspect-ratio: 1; overflow: hidden; position: relative; background: #0F161C; }
+        .card-img img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); opacity: 0.9; }
+        .card:hover img { transform: scale(1.05); opacity: 1; }
+        .badge { position: absolute; top: 15px; right: 15px; background: var(--white); color: #000; padding: 5px 15px; font-size: 0.7rem; letter-spacing: 1px; text-transform: uppercase; font-weight: bold; }
+        .card-content { padding: 30px 0; flex-grow: 1; display: flex; flex-direction: column; }
+        .card-no { font-size: 0.7rem; color: var(--gold); letter-spacing: 3px; font-weight: bold; text-transform: uppercase; margin-bottom: 10px; }
+        .card-title { font-size: 1.4rem; margin: 0 0 10px 0; color: var(--white); text-transform: uppercase; letter-spacing: 1px; }
+        .card-slogan { font-size: 0.8rem; color: var(--gray); font-style: italic; margin-bottom: 20px; letter-spacing: 1px; }
+        .card-desc { font-size: 0.9rem; color: var(--gray); line-height: 1.8; margin-bottom: 30px; font-weight: 300; }
+        .card-seo-tags { font-size: 0.75rem; color: #444; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 20px; margin-top: 20px; line-height: 1.6; }
         .card-seo-tags strong { color: var(--gold); }
-        .btn { display: block; text-align: center; padding: 12px; border: 1px solid var(--gold); color: var(--gold); text-decoration: none; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; margin-top: auto; transition: 0.3s; }
-        .btn:hover { background: var(--gold); color: #000; }
+        .btn { display: inline-block; color: var(--white); text-decoration: none; font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; border-bottom: 1px solid var(--white); padding-bottom: 5px; transition: var(--transition); align-self: flex-start; }
+        .btn:hover { color: var(--gold); border-color: var(--gold); }
         
         /* B2B Customization Gallery Styles */
-        .b2b-gallery-section { padding: 80px 5%; border-top: 1px solid #222; background-color: #050505; }
-        .b2b-title { font-size: 2.5rem; color: var(--gold); text-align: center; margin: 0 0 10px 0; font-weight: 300; letter-spacing: 5px; text-transform: uppercase; }
-        .b2b-subtitle { max-width: 800px; margin: 0 auto 60px auto; text-align: center; color: var(--gray); font-style: italic; font-size: 1.1rem; line-height: 1.6; }
-        .b2b-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; margin-bottom: 50px; }
+        .b2b-gallery-section { padding: 140px 10%; border-top: 1px solid rgba(255,255,255,0.05); background-color: var(--black); }
+        .b2b-title { font-size: 2.8rem; color: var(--white); text-align: center; margin: 0 0 15px 0; font-weight: 200; letter-spacing: 10px; text-transform: uppercase; }
+        .b2b-subtitle { max-width: 800px; margin: 0 auto 100px auto; text-align: center; color: var(--gray); font-size: 0.9rem; line-height: 1.8; letter-spacing: 3px; text-transform: uppercase; font-weight: 300; }
+        .b2b-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 60px; margin-bottom: 80px; }
         @media (max-width: 900px) { .b2b-grid { grid-template-columns: 1fr; } }
-        .b2b-card { background: #111; border: 1px solid #222; border-radius: 4px; overflow: hidden; display: flex; flex-direction: column; transition: 0.4s; }
-        .b2b-card:hover { border-color: var(--gold); }
-        .b2b-card-header { padding: 25px 25px 15px 25px; border-bottom: 1px solid #1a1a1a; }
-        .b2b-pillar-no { font-size: 0.75rem; color: var(--gold); letter-spacing: 2px; font-weight: bold; text-transform: uppercase; margin-bottom: 5px; }
+        .b2b-card { background: transparent; border: none; overflow: hidden; display: flex; flex-direction: column; transition: var(--transition); }
+        .b2b-card:hover { transform: translateY(-5px); }
+        .b2b-card-header { padding: 0 0 20px 0; border-bottom: 1px solid rgba(255,255,255,0.05); margin-bottom: 30px; }
+        .b2b-pillar-no { font-size: 0.7rem; color: var(--gold); letter-spacing: 3px; font-weight: bold; text-transform: uppercase; margin-bottom: 10px; }
         .b2b-pillar-title { font-size: 1.4rem; color: var(--white); text-transform: uppercase; letter-spacing: 1px; margin: 0; }
-        .b2b-card-body { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
-        .b2b-pillar-desc { font-size: 0.95rem; color: var(--gray); line-height: 1.6; margin: 0 0 25px 0; }
-        .b2b-img-single { width: 100%; height: 350px; overflow: hidden; border-radius: 4px; border: 1px solid #222; }
-        .b2b-img-single img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
-        .b2b-img-single img:hover { transform: scale(1.03); }
+        .b2b-card-body { padding: 0; flex-grow: 1; display: flex; flex-direction: column; }
+        .b2b-pillar-desc { font-size: 0.9rem; color: var(--gray); line-height: 1.8; margin: 0 0 30px 0; font-weight: 300; }
+        .b2b-img-single { width: 100%; height: 400px; overflow: hidden; background: #0F161C; }
+        .b2b-img-single img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); opacity: 0.9; }
+        .b2b-img-single img:hover { opacity: 1; transform: scale(1.02); }
         
-        /* Specific layout for Pillar I Multi-image */
-        .b2b-img-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; height: 350px; }
-        .b2b-img-grid-item { position: relative; width: 100%; height: 100%; overflow: hidden; border-radius: 2px; border: 1px solid #222; }
-        .b2b-img-grid-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
-        .b2b-img-grid-item img:hover { transform: scale(1.05); }
-        .b2b-img-grid-item .caption { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.75); color: var(--gold); padding: 5px; font-size: 0.7rem; text-align: center; letter-spacing: 1px; text-transform: uppercase; opacity: 0; transition: 0.3s; }
+        /* Pillar I Multi-image */
+        .b2b-img-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; height: 400px; }
+        .b2b-img-grid-item { position: relative; width: 100%; height: 100%; overflow: hidden; background: #0F161C; }
+        .b2b-img-grid-item img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); opacity: 0.9; }
+        .b2b-img-grid-item img:hover { opacity: 1; transform: scale(1.05); }
+        .b2b-img-grid-item .caption { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.8); color: var(--gold); padding: 8px; font-size: 0.65rem; text-align: center; letter-spacing: 2px; text-transform: uppercase; opacity: 0; transition: 0.3s; }
         .b2b-img-grid-item:hover .caption { opacity: 1; }
         
         /* B2B Call to Action Block */
-        .b2b-cta-block { background: linear-gradient(135deg, #111 0%, #000 100%); border: 1px solid var(--gold); padding: 50px 30px; text-align: center; margin-top: 60px; border-radius: 4px; position: relative; overflow: hidden; }
-        .b2b-cta-title { font-size: 1.8rem; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; margin: 0 0 15px 0; }
-        .b2b-cta-desc { font-size: 1rem; color: var(--white); max-width: 600px; margin: 0 auto 30px auto; line-height: 1.6; }
-        .b2b-cta-btn { display: inline-block; padding: 15px 40px; background: var(--gold); color: #000; border: 1px solid var(--gold); font-size: 0.9rem; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; transition: 0.3s; border-radius: 2px; }
-        .b2b-cta-btn:hover { background: transparent; color: var(--gold); }
+        .b2b-cta-block { background: #0F161C; border: 1px solid rgba(255,255,255,0.05); padding: 80px 40px; text-align: center; margin-top: 100px; position: relative; }
+        .b2b-cta-title { font-size: 1.8rem; color: var(--white); letter-spacing: 5px; text-transform: uppercase; margin: 0 0 20px 0; font-weight: 200; }
+        .b2b-cta-desc { font-size: 0.9rem; color: var(--gray); max-width: 600px; margin: 0 auto 40px auto; line-height: 1.8; font-weight: 300; }
+        .b2b-cta-btn { display: inline-block; padding: 15px 45px; border: 1px solid var(--white); color: var(--white); text-decoration: none; font-size: 0.75rem; letter-spacing: 3px; text-transform: uppercase; transition: var(--transition); }
+        .b2b-cta-btn:hover { background: var(--white); color: var(--black); }
 
-        footer { text-align: center; padding: 40px; border-top: 1px solid #222; color: #444; font-size: 0.8rem; }
+        footer { text-align: center; padding: 60px; border-top: 1px solid rgba(255,255,255,0.05); color: #444; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; }
+    </style>
     </style>
 </head>
 <body>
